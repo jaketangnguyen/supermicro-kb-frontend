@@ -1,0 +1,159 @@
+HTML, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    font-family: "Merriweather", serif;
+}
+
+.nav {
+    background-color:rgb(1 47 107);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  0px 5px 10px rgb(76, 76, 76);
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.nav-items > li {
+    padding: 5px 10px 5px;
+}
+
+.logo {
+    padding: 5px 15px 5px;
+    width: 100px;
+}
+
+
+.footer {
+	height: 2vh;
+    background-color: rgb(1 47 107);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	left: 0;
+    text-align: center;
+    color:white;
+}
+
+.wrapper {
+	height: 93vh;
+    display: flex;
+    justify-content: center;
+	background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.5)),url(../Photos/server.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+    align-self: center;
+}
+
+::placeholder {
+	color: rgb(1 47 107);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p, a span {
+    color: white;
+}
+
+.container .input{
+	border: 0;
+	outline: none;
+	color: #8b7d77;
+}
+
+.search_wrap{
+	width: 500px;
+	margin: 38px auto;
+}
+
+.search_wrap .statement {
+    text-align: center;
+}
+
+.statement p{
+    color: rgb(1 47 107);
+    font-weight: bolder;
+    font-size: 32;
+	font-family: "Merriweather", serif;
+}
+
+.search_wrap .search_box{
+	position: relative;
+	width: 500px;
+	height: 60px;
+}
+
+.search_wrap .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	border-radius: 3px;
+	font-size: 18px;
+}
+
+.search_wrap .search_box .btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 100%;
+	background: rgb(2, 57, 129);
+	z-index: 1;
+	cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover{
+	background: rgb(48, 80, 154);	
+}
+
+.search_wrap .search_box .btn.btn_common .fas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 20px;
+}
+
+
+
+.search_wrap.search_wrap_6 .search_box .btn,
+.search_wrap.search_wrap_5 .search_box .btn{
+	width: 125px;
+	height: 45px;
+	top: 8px;
+	right: 5px;
+	border-radius: 3px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.search_wrap.search_wrap_5 .search_box .input,
+.search_wrap.search_wrap_6 .search_box .input{
+	padding-right: 145px;
+}
