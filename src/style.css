@@ -47,7 +47,7 @@ HTML, body {
 	height: 93vh;
     display: flex;
     justify-content: center;
-	background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.5)),url(../Photos/server.jpg);
+	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)),url(./Photos/server.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
