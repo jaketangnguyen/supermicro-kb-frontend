@@ -4,7 +4,7 @@ HTML, body {
     height: 100%;
     width: 100%;
     border: 0px;
-    font-family: "Merriweather", serif;
+    font-family: "Merriweather Sans", serif;
 }
 
 .nav {
@@ -19,18 +19,28 @@ HTML, body {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    font-size: 17px;
+    font-size: 16px;
+	font-style: italic;
 }
 
 .nav-items > li {
     padding: 5px 10px 5px;
 }
 
+.brand {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 .logo {
     padding: 5px 15px 5px;
     width: 100px;
 }
 
+.site-id {
+	color: white;
+	font-size: 24px;
+}
 
 .footer {
 	height: 2vh;
@@ -90,8 +100,8 @@ p, a span {
 
 .statement p{
     color: rgb(1 47 107);
-    font-weight: bolder;
-    font-size: 32;
+	font-weight: 800;
+    font-size: 36;
 	font-family: "Merriweather", serif;
 }
 
