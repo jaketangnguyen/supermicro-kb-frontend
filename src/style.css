@@ -1,13 +1,20 @@
 HTML, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
     border: 0px;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
     font-family: "Merriweather Sans", serif;
 }
 
+.page {
+	min-height: 100%;
+}
+
 .nav {
+	min-height: 60px;
+	height: 5vh;
     background-color:rgb(1 47 107);
     display: flex;
     justify-content: space-between;
@@ -39,13 +46,13 @@ HTML, body {
 
 .site-id {
 	color: white;
-	font-size: 24px;
+	font-size: 28px;
+	letter-spacing: -0.05em;
 }
 
 .footer {
-	height: 2vh;
     background-color: rgb(1 47 107);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
 	left: 0;
@@ -54,10 +61,10 @@ HTML, body {
 }
 
 .wrapper {
-	height: 93vh;
+	height: calc(100vh  - 70px);
     display: flex;
     justify-content: center;
-	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.25)),url(./Photos/server.jpg);
+	background-image: linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.0)),url(./Photos/server.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -73,14 +80,25 @@ HTML, body {
 a {
     color: white;
     text-decoration: none;
+	
 }
 
 a:hover {
     text-decoration: underline;
+	text-shadow:
+      0 0 7px #fff,
+      0 0 10px rgb(28, 106, 207),
+      0 0 21px #fff,
+      0 0 42px rgb(28, 106, 207),
+      0 0 82px rgb(0, 41, 96),
+      0 0 92px rgb(72, 135, 216),
+      0 0 102px rgb(82, 148, 236),
+      0 0 151px rgb(4, 112, 252);
 }
 
 p, a span {
     color: white;
+	
 }
 
 .container .input{
@@ -96,14 +114,31 @@ p, a span {
 
 .search_wrap .statement {
     text-align: center;
+	letter-spacing: -0.05em;
 }
 
 .statement p{
-    color: rgb(1 47 107);
+    color: white;
 	font-weight: 800;
-    font-size: 36;
+    font-size: 40;
 	font-family: "Merriweather", serif;
+	text-shadow:
+      0 0 7px #fff,
+      0 0 10px rgb(28, 106, 207),
+      0 0 21px #fff,
+      0 0 42px rgb(28, 106, 207),
+      0 0 82px rgb(0, 41, 96),
+      0 0 92px rgb(72, 135, 216),
+      0 0 102px rgb(82, 148, 236),
+      0 0 151px rgb(4, 112, 252);
 }
+
+.statement p:hover {
+	color: white;
+	
+}
+
+
 
 .search_wrap .search_box{
 	position: relative;
@@ -134,7 +169,15 @@ p, a span {
 }
 
 .search_wrap .search_box .btn:hover{
-	background: rgb(48, 80, 154);	
+	text-shadow:
+      0 0 7px #fff,
+      0 0 10px rgb(28, 106, 207),
+      0 0 21px #fff,
+      0 0 42px rgb(28, 106, 207),
+      0 0 82px rgb(0, 41, 96),
+      0 0 92px rgb(72, 135, 216),
+      0 0 102px rgb(82, 148, 236),
+      0 0 151px rgb(4, 112, 252);	
 }
 
 .search_wrap .search_box .btn.btn_common .fas{

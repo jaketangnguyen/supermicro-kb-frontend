@@ -6,7 +6,7 @@ import Footer from "./Footer"
 
 function Page() {
   return (
-      <div>
+      <div className="page">
           <Header />
           <Body />
           <Footer />

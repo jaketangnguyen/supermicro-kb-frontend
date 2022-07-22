@@ -6,7 +6,7 @@ export default function Header() {
             <nav className="nav">
                 <div className="brand">
                     <img className="logo" src={require("./Photos/smc.png")} />
-                    <div className="site-id">Knowledge Base</div>
+                    <div className="site-id">KnowledgeBase</div>
                 </div>
                 <ul className="nav-items">
                     <li className="nav-link"><a href="./families.html">Product Families</a></li>

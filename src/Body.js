@@ -7,9 +7,9 @@ export default function Body() {
         <div class="wrapper">
         <div className="container">
             <div className="search_wrap search_wrap_5">
-            <div class="statement">
-		        <p>Supermicro Knowledge Base</p>
-	        </div>
+                <div class="statement">
+                    <p>Supermicro Knowledge Base</p>
+                </div>
                 <div className="search_box">
                     <input type="text" className="input" placeholder="Enter SKU, Components ..."/>
                     <div class="btn">
@@ -21,4 +21,4 @@ export default function Body() {
     </div>
                 
     )
-}
+}   
