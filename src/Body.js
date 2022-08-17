@@ -1,7 +1,6 @@
 import React from "react"
 import "./style.css"
 
-
 export default function Body() {
     return (
         <div class="wrapper">
@@ -13,7 +12,7 @@ export default function Body() {
                 <div className="search_box">
                     <input type="text" className="input" placeholder="Enter SKU, Components ..."/>
                     <div class="btn">
-                        <p>Search</p>
+                        <a href = "./Search/index">Search</a>
                     </div>
                 </div>
             </div>
