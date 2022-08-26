@@ -1,17 +1,18 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import Header from "./Header"
-import Body from "./Body"
+import Search from "./Search"
 import Footer from "./Footer"
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
-function Page() {
+function Results() {
 
   return (
     <Router>
       <div className="page">
           <Header />
-          <Body /> 
+          
+          <Search /> 
           <Footer />
       </div>
     </Router>
@@ -19,4 +20,4 @@ function Page() {
   
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Page/>)
+ReactDOM.render(<Results />, document.getElementById("root"))

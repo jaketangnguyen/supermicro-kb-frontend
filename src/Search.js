@@ -1,13 +1,13 @@
 import React from "react"
-import Header from "header"
-import Footer from "footer"
-import "./style.css"
+// import Header from "header"
+// import Footer from "footer"
+// import "./style.css"
 
-function search() {
+export default function Search() {
 
     return (
-        <div class="wrapper">
-            <Header />
+        <div>
+            {/* <Header /> */}
             <div class="container">
                 <div class="resultsSpace">
                     <div class="searchresult">
@@ -32,9 +32,10 @@ function search() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 
 }
 
+ 
