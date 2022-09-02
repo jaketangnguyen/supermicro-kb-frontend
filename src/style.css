@@ -210,3 +210,15 @@ p, a span {
 .search_wrap.search_wrap_6 .search_box .input{
 	padding-right: 145px;
 }
+
+.resultsSpace{
+	display: flex;
+	justify-content: right;
+	flex-direction: column;
+}
+
+.result{
+	display: flex;
+	justify-content: right;
+	flex-direction: column;
+}

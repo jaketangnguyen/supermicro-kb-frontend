@@ -1,22 +1,29 @@
 import React from "react"
-import ReactDOM from "react-dom"
-import Header from "./Header"
-import Body from "./Body"
-import Footer from "./Footer"
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import ReactDOM from "react-dom/client"
+import Header from "./pages/Header"
+import Search from './pages/Search'
+import SearchResult from './pages/searchResults';
+import Footer from "./pages/Footer"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-function Page() {
+export default function App() {
 
   return (
-    <Router>
-      <div className="page">
-          <Header />
-          <Body /> 
-          <Footer />
+    <BrowserRouter>
+      <div>
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Search />}> </Route>
+          <Route path="/search" element={<SearchResult />}> </Route>
+        </Routes>
+
+        <Footer />
       </div>
-    </Router>
-  )
-  
+    </BrowserRouter>
+  );
+
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Page/>)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />)

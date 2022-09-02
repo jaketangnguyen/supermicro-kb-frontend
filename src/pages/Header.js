@@ -5,7 +5,7 @@ export default function Header() {
         <header className="header">
             <nav className="nav">
                 <div className="brand">
-                    <img className="logo" src={require("./Photos/smc.png")} />
+                    {/* <img className="logo" src={require("../Photos/smc.png")} /> */}
                     <div className="site-id">KnowledgeBase</div>
                 </div>
                 <ul className="nav-items">
@@ -16,4 +16,4 @@ export default function Header() {
             </nav>
         </header>
     )
-  }
+}
