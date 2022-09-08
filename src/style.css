@@ -77,7 +77,7 @@ HTML, body {
 	color: rgb(1 47 107);
 }
 
-a {
+/* a {
     color: white;
     text-decoration: none;
 	
@@ -94,7 +94,7 @@ a:hover {
       0 0 92px rgb(72, 135, 216),
       0 0 102px rgb(82, 148, 236),
       0 0 151px rgb(4, 112, 252);
-}
+} */
 
 p, a span {
     color: white;

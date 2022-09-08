@@ -19,7 +19,6 @@ export default function Search() {
             <div className="search_box">
                 <input type="text" className="input" placeholder="Enter SKU, Components ..." />
                 <div class="btn">
-
                     <button onClick={navigateResult}>Search</button>
                 </div>
             </div>
