@@ -70,7 +70,8 @@ HTML, body {
 }
 
 .container {
-    align-self: center;
+    align-self: right;
+	justify-content: right;
 }
 
 ::placeholder {

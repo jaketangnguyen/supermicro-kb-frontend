@@ -8,11 +8,20 @@ export default function Header() {
                     {/* <img className="logo" src={require("../Photos/smc.png")} /> */}
                     <div className="site-id">KnowledgeBase</div>
                 </div>
-                <ul className="nav-items">
+
+                <ul>
+                    <li className="nav-items">
+                        <Link to="ProductFamily" className="nav-items">
+                            Product Family
+                        </Link>
+                    </li>
+                </ul>
+
+                {/* <ul className="nav-items">
                     <li className="nav-link"><a href="./families.html">Product Families</a></li>
                     <li className="nav-link"><a href="#">Components</a></li>
                     <li className="nav-link"><a href="#">Common Questions</a></li>
-                </ul>
+                </ul> */}
             </nav>
         </header>
     )
