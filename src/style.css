@@ -70,8 +70,11 @@ HTML, body {
 }
 
 .container {
-    align-self: right;
-	justify-content: right;
+	align-items: right;
+	display: flex; 
+	width: 100%;
+   	justify-content: center;
+	
 }
 
 ::placeholder {
@@ -230,9 +233,13 @@ a:hover {
 }
 
 .resultsSpace{
+	margin-left: 150px;
 	display: flex;
+	width: 100%;
+	display: table;
 	justify-content: right;
 	flex-direction: column;
+	
 }
 
 .result{
@@ -240,3 +247,4 @@ a:hover {
 	justify-content: right;
 	flex-direction: column;
 }
+

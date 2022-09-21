@@ -1,11 +1,12 @@
 import React from "react"
 
-export default function ProductFamily() {
+export default function Article() {
     return (
         <div>
             <h1>Article Heading</h1>
             <div>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio. Nam aliquam sem et tortor consequat. Quis hendrerit dolor magna eget est lorem ipsum. Viverra orci sagittis eu volutpat odio facilisis mauris. Nisi porta lorem mollis aliquam. At consectetur lorem donec massa sapien faucibus. Elementum eu facilisis sed odio morbi quis commodo odio. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Mi quis hendrerit dolor magna eget.
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia at quis risus sed vulputate odio. Nam aliquam sem et tortor consequat. Quis hendrerit dolor magna eget est lorem ipsum. Viverra orci sagittis eu volutpat odio facilisis mauris. Nisi porta lorem mollis aliquam. At consectetur lorem donec massa sapien faucibus. Elementum eu facilisis sed odio morbi quis commodo odio. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Mi quis hendrerit dolor magna eget.
                     Pellentesque dignissim enim sit amet venenatis urna. Erat velit scelerisque in dictum. Nunc consequat interdum varius sit amet. Sed odio morbi quis commodo. Ut pharetra sit amet aliquam id diam maecenas. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Purus gravida quis blandit turpis. Consequat id porta nibh venenatis cras sed felis eget velit. Ornare arcu odio ut sem nulla pharetra. Augue ut lectus arcu bibendum at. Eu feugiat pretium nibh ipsum consequat nisl. Leo in vitae turpis massa.
                     Elementum pulvinar etiam non quam lacus suspendisse. Pretium quam vulputate dignissim suspendisse in. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Sodales ut etiam sit amet nisl purus. Mauris commodo quis imperdiet massa tincidunt nunc. Ipsum suspendisse ultrices gravida dictum. Odio morbi quis commodo odio. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Eu augue ut lectus arcu bibendum at varius. Eu feugiat pretium nibh ipsum consequat nisl vel. Eleifend mi in nulla posuere. Vitae et leo duis ut. Eget egestas purus viverra accumsan in nisl.
                     Dignissim enim sit amet venenatis urna cursus eget nunc.

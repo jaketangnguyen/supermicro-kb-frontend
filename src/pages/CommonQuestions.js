@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function ProductFamily(){
+export default function CommonQuestions(){
     return (
         <div>
             <ul>

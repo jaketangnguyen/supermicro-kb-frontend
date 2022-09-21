@@ -14,6 +14,7 @@ export default function Search() {
 
     return (
         <div>
+            
             {/* <Header /> */}
             <div className="search_wrap search_wrap_5">
                 <div className="search_box">
@@ -27,7 +28,7 @@ export default function Search() {
             <div class="container">
                 <div class="resultsSpace">
                     <div class="result">
-                        <h2>QnA Placeholder title 1</h2>
+                        <h2> QnA Placeholder title 1</h2>
                         <a>https://Qnaplaceholder.com</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
                     </div>
