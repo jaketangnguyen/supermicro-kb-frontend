@@ -12,39 +12,149 @@ HTML, body {
 	min-height: 100%;
 }
 
+/*==========================================*/
+/*        Navigation & Header Section       */
+/*==========================================*/
 .nav {
 	min-height: 60px;
-	height: 10vh;
-    background-color:rgb(1 47 107);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow:  0px 5px 10px rgb(76, 76, 76);
+	height: 80px;
+  	background-color:rgb(1 47 107);
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	font-size: 1.2rem; /*Allows for font scaling when default font size is changed. Default is usually 1 rem =16px*/
+	position: sticky;
+	top: 0;
+	z-index: 999;
+  	box-shadow:  0px 5px 10px rgb(76, 76, 76);
 }
 
-.nav-items {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    font-size: 16px;
-	font-style: italic;
-}
-
-.nav-items > li {
-    padding: 5px 10px 5px;
-}
-
-.brand {
+.nav-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	height: 80px;
+	max-width: 1500px;
 }
-
 
 .logo {
-    padding: 5px 15px 5px;
-    width: 100px;
+  	/*padding: 5px 15px 5px;*/
+  	width: 100px;
+	justify-self: start;
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
 }
+
+.nav-menu {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 10px;
+	list-style: none;
+	text-align: center;
+	width: 80vw; /*view width = % of viewport*/
+	justify-content: end;
+	margin-right: 2em;
+  }
+
+.nav-items {
+  	display: flex;
+  	list-style: none;
+  	/*justify-content: space-between;*/
+	align-items: center;
+  	font-size: 16px;
+	font-style: normal;
+	height: 80px;
+}
+
+.nav-links:hover{
+	text-decoration: none;
+	border-bottom: 4px solid #fff;
+	transition: all 0.2s ease-out;
+}
+
+.nav-links {
+  /*padding: 5px 10px 5px;*/
+	padding: 0.5rem 1rem;
+}
+
+.fa-bars {
+	color: #fff;
+}
+
+.menu-icon {
+	display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+	.NavbarItems {
+	  position: relative;
+	}
+  
+	.nav-menu {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	  /* (ie. 45vh) Originally used view height, which was similar to vw. It is the % of the viewport as opposed to fixed number.
+	     switched to px so menu wouldn't move with screen resizing. */
+	  height: 270px; 
+	  position: absolute;
+	  top: 80px;
+	  left: -100%;
+	  opacity: 1;
+	  transition: all 0.5s ease;
+	}
+  
+	.nav-menu.active {
+	  background: #242222;
+	  left: 0;
+	  opacity: 1;
+	  transition: all 0.5s ease;
+	  z-index: 1;
+	}
+  
+	.nav-links {
+	  text-align: center;
+	  padding: 2rem;
+	  width: 100%;
+	  display: table;
+	}
+  
+	.nav-links:hover {
+	  background-color: #fff;
+	  color: #242424;
+	  border-radius: 0;
+	  text-decoration: none;
+	}
+  
+	.logo {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  transform: translate(25%, 50%);
+	}
+  
+	.menu-icon {
+	  display: block;
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  transform: translate(-100%, 60%);
+	  font-size: 1.8rem;
+	  cursor: pointer;
+	}
+  
+	.fa-times {
+	  color: #fff;
+	  font-size: 2rem;
+	}
+}  
+
+/*==========================================*/
+/*==========================================*/
+
 
 .site-id {
 	color: white;
@@ -53,19 +163,19 @@ HTML, body {
 }
 
 .footer {
-    background-color: rgb(1 47 107);
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  	background-color: rgb(1 47 107);
+	position: fixed;
+	bottom: 0;
+	right: 0;
 	left: 0;
-    text-align: center;
-    color:white;
+	text-align: center;
+	color:white;
 }
 
 .wrapper {
 	height: calc(100vh  - 70px);
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 	background-image: linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,0.0)),url(./Photos/server.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -75,7 +185,7 @@ HTML, body {
 	align-items: right;
 	display: flex; 
 	width: 100%;
-   	justify-content: center;
+  	justify-content: center;
 	
 }
 
@@ -83,13 +193,25 @@ HTML, body {
 	color: rgb(1 47 107);
 }
 
-/* a {
+a {
     color: white;
     text-decoration: none;
 	
 }
 
-a:hover {
+a.nav-links {
+    color: white;
+    text-decoration: none;
+	
+}
+
+/*a.nav-links:hover {
+	color: white;
+}*/
+
+
+
+/*a:hover {
     text-decoration: underline;
 	text-shadow:
       0 0 7px #fff,
@@ -259,7 +381,12 @@ a:hover {
   font-size:15px;
   line-height:24px;
   color:#737373;
+  /*temporary measure*/
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100%;
   }
+
 .site-footer hr
 {
   border-top-color:#bbb;

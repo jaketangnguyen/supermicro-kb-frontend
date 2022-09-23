@@ -2,8 +2,7 @@ import React from "react"
 import "../style.css"
 import { BrowserRouter as Route, useNavigate } from 'react-router-dom'
 
-export default function Components(){
-    
+export default function ProductFamily(){
     const navigate = useNavigate();
 
     const navigateResult = () => {
@@ -25,7 +24,7 @@ export default function Components(){
             <div class="container">
                 <div class="resultsSpace">
                     <div class="result">
-                        <h2> Components Page</h2>
+                        <h2> Product Family Page</h2>
                         <a>                   </a>
                         <p>                   </p>
                     </div>
