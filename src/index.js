@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import CommonQuestions from "./pages/CommonQuestions";
 import Components from "./pages/Components";
 import ProductFamily from "./pages/ProductFamily";
+import Article from "./pages/ArticlePage"
 
 export default function App() {
   
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/search" element={<SearchResult />}> </Route>
           <Route path="/Components" element={<Components />}> </Route>
           <Route path="/ProductFamily" element={<ProductFamily />}> </Route>
+          <Route path="/ArticlePage" element ={<Article />}> </Route>
           <Route path="/CommonQuestions" element={<CommonQuestions />}> </Route>
         </Routes>
         <Footer />

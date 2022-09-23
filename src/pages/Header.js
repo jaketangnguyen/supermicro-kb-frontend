@@ -18,25 +18,31 @@ export default function Header() {
                     <Link to='/' className="logo">
                         <img className="logo" src={require("../Photos/smc.png")}/>
                     </Link>
+
                     {/*<div className="site-id"> KnowledgeBase</div>*/}
 
                     {/*Declaring the tabs in the navigation bar*/}
+
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
+                        
                         {/*<li className="nav-items">
                             <Link to="/" className="nav-link" >
                                 Home
                             </Link>
                         </li>*/}
-                         <li className="nav-items">
+
+                        <li className="nav-items">
                             <Link to="/CommonQuestions" className="nav-links" onClick={closeMobileMenu}>
                                 Common Questions
                             </Link>
                         </li>
+
                         <li className="nav-items">
                             <Link to="/ProductFamily" className="nav-links" onClick={closeMobileMenu}>
                                 Product Family
                             </Link>
                         </li>
+                        
                         <li className="nav-items">
                             <Link to="/Components" className="nav-links" onClick={closeMobileMenu}>
                                 Components
