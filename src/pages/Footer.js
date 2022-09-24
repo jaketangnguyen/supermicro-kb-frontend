@@ -1,5 +1,6 @@
 import React from "react"
 import "../style.css"
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -15,11 +16,10 @@ export default function Footer() {
                         <h6>Resources</h6>
                         <ul class="footer-links">
                             <li><a href="#">Command Center</a></li>
-                            <li><a href="#">E-store</a></li>
-                            <li><a href="#">Common Questions</a></li>
-                            <li><a href="#">Product Families</a></li>
-                            <li><a href="#">Component Support</a></li>
-                            <li><a href="#">Templates</a></li>
+                            <li><a href='https://store.supermicro.com/' >E-Store</a></li>
+                            <li><Link to="/CommonQuestions">Common Questions</Link></li>
+                            <li><Link to="/ProductFamily">Product Family</Link></li>
+                            <li><Link to="/Components">Component Support</Link></li>
                         </ul>
                     </div>
 
