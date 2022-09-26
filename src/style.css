@@ -517,18 +517,6 @@ a.nav-links {
   width:34px;
   font-size:14px
 }
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
 
 @media (max-width:767px)
 {
@@ -538,4 +526,33 @@ a.nav-links {
     margin-right:0;
     font-weight:600
   }
+}
+
+/* Article */
+
+main { 
+	margin: 10;
+	background: #fff;
+	position: relative;
+	border: 1px solid #fff;
+	font-size: 1.4rem;
+	padding: 2rem 25%;
+	line-height: 1.6;
+  }
+
+.content{
+	font-size: 16;
+}
+
+.articleHeader{
+	font-size: 32;
+	margin: 5;
+}
+
+header img {
+	width: 100%;
+}
+
+img{
+	margin: 10;
 }

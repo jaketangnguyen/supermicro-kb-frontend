@@ -28,11 +28,11 @@ export default function CommonQuestions() {
 
                     <div class="result">
                         <Link to="/ArticlePage" >
-                            <h2> Is JBOD going to be added to the configurator? </h2>
+                            <h2> Expanding your search with the Configurator filter </h2>
                         </Link>
                         <hr />
-                        <p> Currently there are no plans to add JBOD to the configurator. Please submit manually through IBOM. </p>
-                        <a> https://my.livechatinc.com/tickets/V9KMQ </a>
+                        <p> The configurator has a vast filter network that offers a variety of options to choose from. </p>
+                        
                     </div>
 
                     <div class="result">

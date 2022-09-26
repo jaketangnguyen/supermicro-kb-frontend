@@ -40,3 +40,10 @@ export default function App() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />)
+
+function Estore() {
+  // 👇️ redirect to external URL
+  window.location.replace('https://store.supermicro.com/');
+
+  return null;
+}
