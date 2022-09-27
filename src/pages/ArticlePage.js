@@ -8,7 +8,7 @@ export default function Article() {
                 <img src={require('../Photos/Datacenter10.webp')} />
             </header>
             <h1 className="articleHeader"> Expanding your search with the Configurator filter</h1>
-            <h6>by Command Center Staff</h6>
+            <h6 className="author">by Command Center Staff</h6>
             <div className="content" >
                 <p>
                     The configurator has a vast filter network that offers a variety of options to choose from.
@@ -22,6 +22,7 @@ export default function Article() {
                 </p>
 
                 <img src={require('../Photos/expandedFilter.png')} />
+
                 <p>
                     These three provide a large number of systems that are compatible with the filter applied.  On the other hand, if the specific CPU is known, we have a filter option called the Processor Name.  It provides an extensive list of the current validated CPUs we have here at Supermicro, and selecting one will provide all the systems that support that specific CPU.
                 </p>

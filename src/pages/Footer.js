@@ -16,7 +16,7 @@ export default function Footer() {
                         <h6>Resources</h6>
                         <ul class="footer-links">
                             <li><a href="#">Command Center</a></li>
-                            <li><a href='https://store.supermicro.com/' >E-Store</a></li>
+                            <li><a href='https://store.supermicro.com/'>E-Store</a></li>
                             <li><Link to="/CommonQuestions">Common Questions</Link></li>
                             <li><Link to="/ProductFamily">Product Family</Link></li>
                             <li><Link to="/Components">Component Support</Link></li>
@@ -39,7 +39,7 @@ export default function Footer() {
                 <div class="row">
                     <div class="col-md-8 col-sm-6 col-xs-12">
                         <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-                            <a href="#"> Supermicro</a>.
+                            <a href="https://www.supermicro.com/"> Supermicro</a>.
                         </p>
                     </div>
                 </div>

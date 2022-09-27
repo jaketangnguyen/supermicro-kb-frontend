@@ -540,6 +540,10 @@ main {
 	line-height: 1.6;
   }
 
+.author{
+	font-size: 14;
+}  
+
 .content{
 	font-size: 16;
 }
@@ -547,10 +551,12 @@ main {
 .articleHeader{
 	font-size: 32;
 	margin: 5;
+	margin-bottom: 15;
 }
 
 header img {
 	width: 100%;
+	margin: 5;
 }
 
 img{
