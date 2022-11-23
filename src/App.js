@@ -22,6 +22,7 @@ const App = () => {
         </div>
   
         <Header />
+        
         <Routes>
           <Route path="/" element={<Search />}> </Route>
           <Route path="/search" element={<SearchResult />}> </Route>
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/ArticlePage" element={<Article />}> </Route>
           <Route path="/CommonQuestions" element={<CommonQuestions />}> </Route>
         </Routes>
+
         <Footer />
       </BrowserRouter>
     );

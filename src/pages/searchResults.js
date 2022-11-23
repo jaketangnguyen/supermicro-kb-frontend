@@ -33,45 +33,10 @@ export default function Search() {
                         <a>https://Qnaplaceholder.com</a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
                     </div>
-                    <div class="result">
-                        <h2>QnA Placeholder title 2</h2>
-                        <hr/>
-                        <a>https://Qnaplaceholder.com</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
-                    </div>
-                    <div class="result">
-                        <h2>QnA Placeholder title 3</h2>
-                        <hr/>
-                        <a>https://Qnaplaceholder.com</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
-                    </div>
-                    <div class="result">
-                        <h2>QnA Placeholder title 4</h2>
-                        <hr/>
-                        <a>https://Qnaplaceholder.com</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
-                    </div>
-                    <div class="result">
-                        <h2>QnA Placeholder title 5</h2>
-                        <hr/>
-                        <a>https://Qnaplaceholder.com</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
-                    </div>
-                    <div class="result">
-                        <h2>QnA Placeholder title 6</h2>
-                        <hr/>
-                        <a>https://Qnaplaceholder.com</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
-                    </div>
-                    <div class="result">
-                        <h2>QnA Placeholder title 7</h2>
-                        <hr/>
-                        <a>https://Qnaplaceholder.com</a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.</p>
-                    </div>
                 </div>
             </div>
             {/* <Footer /> */}
+            
         </div>
     )
 

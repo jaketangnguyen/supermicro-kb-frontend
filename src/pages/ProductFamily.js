@@ -1,6 +1,6 @@
 import React from "react"
 import "../style.css"
-import Card from 'react-bootstrap/Card';
+
 
 import { BrowserRouter as Route, useNavigate } from 'react-router-dom'
 
@@ -30,8 +30,7 @@ export default function ProductFamily(){
                         <a>                   </a>
                         <p>                   </p>
                     </div>
-
-                    
+                  
                     <div class="result">
                         <h2> </h2>
                         <a>                   </a>
