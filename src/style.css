@@ -372,6 +372,16 @@ a.nav-links {
 	flex-direction: column;
 }
 
+/* Sidebar */
+
+.sBarCat{
+	font-size: 50px; 
+}
+
+.sidebar{
+	list-style: none;
+}
+
 /* Footer Styles */
 
 .site-footer
