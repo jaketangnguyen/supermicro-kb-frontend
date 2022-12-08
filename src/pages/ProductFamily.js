@@ -1,10 +1,11 @@
 import React from "react"
 import "../style.css"
-
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
 import { BrowserRouter as Route, useNavigate } from 'react-router-dom'
 
-export default function ProductFamily(){
+export default function ProductFamily() {
     const navigate = useNavigate();
 
     const navigateResult = () => {
@@ -23,6 +24,7 @@ export default function ProductFamily(){
                 </div>
             </div>
 
+
             <div class="container">
                 <div class="resultsSpace">
                     <div class="result">
@@ -30,40 +32,87 @@ export default function ProductFamily(){
                         <a>                   </a>
                         <p>                   </p>
                     </div>
-                  
-                    <div class="result">
-                        <h2> </h2>
-                        <a>                   </a>
-                        <p>                   </p>
-                    </div>
-                    <div class="result">
-                        <h2> </h2>
-                        <a>                   </a>
-                        <p>                   </p>
-                    </div>
-                    <div class="result">
-                        <h2> </h2>
-                        <a>                   </a>
-                        <p>                   </p>
-                    </div>
-                    <div class="result">
-                        <h2> </h2>
-                        <a>                   </a>
-                        <p>                   </p>
-                    </div>
-                    <div class="result">
-                        <h2> </h2>
-                        <a>                   </a>
-                        <p>                   </p>
-                    </div>
-                    <div class="result">
-                        <h2> </h2>
-                        <a>                   </a>
-                        <p>                   </p>
-                    </div>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Ultra</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>UP</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Twin</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>GPU</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Storage</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Mainstream</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>CloudDC</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>AMD</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
                 </div>
             </div>
             {/* <Footer /> */}
+
+
+
+
+
         </div>
     )
 }

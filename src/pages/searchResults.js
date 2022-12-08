@@ -4,10 +4,10 @@ import Search from "./Search";
 import SidebarCheckbox from "./SidebarCheckbox";
 
 const CATEGORIES = [
-    " Questions & Answers", 
-    " Articles", 
-    " Others", 
-    " Stuff"
+    "Questions & Answers", 
+    "Articles", 
+    "Others" 
+    
   ]
 
   const ENTRIES = [
@@ -99,6 +99,7 @@ class SearchResults extends React.Component {
             return {entries: ent, filters: fil}
         });
     }
+
     render(){
     return (
         <div>
@@ -114,7 +115,7 @@ class SearchResults extends React.Component {
             <div class="container">
                 <div class="resultsSpace">
                    {
-                    this.state.entries.map((entry, index)=>(
+                    this.state.entries.map((entry, index)=>( 
                         <div class="result">
                             <h2>{entry.title}</h2>
                             <hr/>

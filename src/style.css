@@ -375,11 +375,17 @@ a.nav-links {
 /* Sidebar */
 
 .sBarCat{
-	font-size: 50px; 
+	font-size: 32px; 
 }
 
 .sidebar{
 	list-style: none;
+	font-size: 16px;
+}
+
+.filterList{
+	font-size: 16px;
+	border:rgb(29, 1, 189);
 }
 
 /* Footer Styles */

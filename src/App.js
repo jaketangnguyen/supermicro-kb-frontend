@@ -8,6 +8,7 @@ import CommonQuestions from "./pages/CommonQuestions";
 import Components from "./pages/Components";
 import ProductFamily from "./pages/ProductFamily";
 import Article from "./pages/ArticlePage"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
 
