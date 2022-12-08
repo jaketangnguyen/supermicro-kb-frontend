@@ -6,7 +6,10 @@ import SidebarCheckbox from "./SidebarCheckbox";
 const CATEGORIES = [
     "Questions & Answers", 
     "Articles", 
-    "Others" 
+    "Others", 
+    "stuff", 
+    "more stuff", 
+    "even more stuff"
     
   ]
 

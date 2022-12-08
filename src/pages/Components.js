@@ -2,6 +2,7 @@ import React from "react"
 import "../style.css"
 import { BrowserRouter as Route, useNavigate } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
+import Row from 'react-bootstrap/Row'
 
 export default function Components() {
 
@@ -31,6 +32,7 @@ export default function Components() {
                         <p>                   </p>
                     </div>
 
+                <Row>
                     <Card style={{ width: '18rem' }}>
                         <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
@@ -39,6 +41,36 @@ export default function Components() {
                         </Card.Body>
                     </Card>
 
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card</Card.Title>
+
+                        </Card.Body>
+                    </Card>                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card</Card.Title>
+
+                        </Card.Body>
+                    </Card>
+                </Row>
                 </div>
             </div>
             {/* <Footer /> */}

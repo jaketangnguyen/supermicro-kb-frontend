@@ -1,5 +1,9 @@
 import React from "react";
-import ListGroup from 'react-bootstrap/ListGroup'
+import { TabContainer } from "react-bootstrap";
+import ListGroup from 'react-bootstrap/ListGroup';
+import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
+import Col from 'react-bootstrap/Col';
 
 class SidebarCheckbox extends React.Component {
 
@@ -14,27 +18,35 @@ class SidebarCheckbox extends React.Component {
 
   render() {
     return (
-      
-      <div className="sidebar">
+      <Tab.Container>
         <header className="sBarCat">
           {'Categories'}
         </header>
-        {this.props.categories.map(category => (
 
-          <li className = "filterList"key={category}>
-            <label>
-              
-              <input 
-                onChange={this.handleChange}
-                type="checkbox"
-                value={category} />
-              {category}
-              
-            </label>
-          </li>
-        ))}
-      </div>
-      
+        <Row>
+          <Col sm={3}>
+            
+            <ListGroup className="sidebar">
+
+              {this.props.categories.map(category => (
+
+                <ListGroup.Item className="filterList" key={category}>
+                  <label>
+
+                    <input
+                      onChange={this.handleChange}
+                      type="checkbox"
+                      value={category} />
+                    {category}
+
+                  </label>
+                </ListGroup.Item>
+              ))}
+            </ListGroup>
+          </Col>
+        </Row>
+
+      </Tab.Container>
     );
   };
 }

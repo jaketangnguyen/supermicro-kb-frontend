@@ -375,7 +375,7 @@ a.nav-links {
 /* Sidebar */
 
 .sBarCat{
-	font-size: 32px; 
+	font-size: 20px; 
 }
 
 .sidebar{
@@ -385,7 +385,7 @@ a.nav-links {
 
 .filterList{
 	font-size: 16px;
-	border:rgb(29, 1, 189);
+	
 }
 
 /* Footer Styles */
