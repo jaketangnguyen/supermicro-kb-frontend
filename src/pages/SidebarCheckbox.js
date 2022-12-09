@@ -25,7 +25,6 @@ class SidebarCheckbox extends React.Component {
 
         <Row>
           <Col sm={3}>
-            
             <ListGroup className="sidebar">
 
               {this.props.categories.map(category => (
@@ -37,6 +36,7 @@ class SidebarCheckbox extends React.Component {
                       onChange={this.handleChange}
                       type="checkbox"
                       value={category} />
+                                        
                     {category}
 
                   </label>

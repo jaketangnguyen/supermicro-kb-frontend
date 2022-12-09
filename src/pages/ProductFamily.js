@@ -31,14 +31,14 @@ export default function ProductFamily() {
                         <h2> Product Family Page</h2>
                     </div>
 
-                    <Row>
-                        <Card style={{ width: '18rem' }}>
+                    <Row >
+                        <Card  style={{ width: '18rem'}}>
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Title>Ultra</Card.Title>
                             </Card.Body>
                         </Card>
-
+                                            
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
@@ -92,7 +92,6 @@ export default function ProductFamily() {
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Title>Card</Card.Title>
-
                             </Card.Body>
                         </Card>
 
@@ -100,7 +99,6 @@ export default function ProductFamily() {
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Title>Card</Card.Title>
-
                             </Card.Body>
                         </Card>
 
@@ -108,7 +106,6 @@ export default function ProductFamily() {
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Title>Card</Card.Title>
-
                             </Card.Body>
                         </Card>
 
@@ -116,7 +113,6 @@ export default function ProductFamily() {
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Title>Card</Card.Title>
-
                             </Card.Body>
                         </Card>
 
@@ -124,21 +120,20 @@ export default function ProductFamily() {
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Title>Card</Card.Title>
-
                             </Card.Body>
                         </Card>
+
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Title>Card</Card.Title>
-
                             </Card.Body>
                         </Card>
+
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Title>Card</Card.Title>
-
                             </Card.Body>
                         </Card>
                     </Row>
