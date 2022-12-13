@@ -12,6 +12,11 @@ HTML, body {
 	min-height: 100%;
 }
 
+.pageContainer{
+	position: relative;
+	min-height: 100vh;
+}
+
 /*==========================================*/
 /*        Navigation & Header Section       */
 /*==========================================*/
@@ -399,7 +404,7 @@ a.nav-links {
   line-height:24px;
   color:#737373;
   /*temporary measure*/
-  position: relative; 
+  /* position: absolute;  */
   bottom: 0;
   width: 100%;
   }

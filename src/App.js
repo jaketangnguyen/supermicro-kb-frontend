@@ -13,7 +13,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
 
   return (
+
     <BrowserRouter>
+
       <div>
         <link
           rel="stylesheet"
@@ -21,9 +23,9 @@ const App = () => {
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
           crossorigin="anonymous" />
       </div>
-      <div>
-        <Header />
 
+      <Header />
+      <div className="pageContainer">
         <Routes>
           <Route path="/" element={<Search />}> </Route>
           <Route path="/search" element={<SearchResult />}> </Route>
@@ -32,9 +34,9 @@ const App = () => {
           <Route path="/ArticlePage" element={<Article />}> </Route>
           <Route path="/CommonQuestions" element={<CommonQuestions />}> </Route>
         </Routes>
-
-        <Footer />
       </div>
+      <Footer />
+
     </BrowserRouter>
   );
 
