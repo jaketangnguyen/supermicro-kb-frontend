@@ -19,13 +19,14 @@ class SidebarCheckbox extends React.Component {
   render() {
     return (
       <Tab.Container>
-        <header className="sBarCat">
-          {'Categories'}
-        </header>
-
         <Row>
-          <Col sm={3}>
+          <Col sm={2}>
+
             <ListGroup className="sidebar">
+              
+              <header className="sBarCat">
+                {'Categories'}
+              </header>
 
               {this.props.categories.map(category => (
 
@@ -36,7 +37,7 @@ class SidebarCheckbox extends React.Component {
                       onChange={this.handleChange}
                       type="checkbox"
                       value={category} />
-                                        
+
                     {category}
 
                   </label>
@@ -45,7 +46,6 @@ class SidebarCheckbox extends React.Component {
             </ListGroup>
           </Col>
         </Row>
-
       </Tab.Container>
     );
   };

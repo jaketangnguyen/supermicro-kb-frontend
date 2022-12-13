@@ -12,18 +12,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
 
-    return (
-      <BrowserRouter>
-        <div>
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-            crossorigin="anonymous" />
-        </div>
-  
+  return (
+    <BrowserRouter>
+      <div>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous" />
+      </div>
+      <div>
         <Header />
-        
+
         <Routes>
           <Route path="/" element={<Search />}> </Route>
           <Route path="/search" element={<SearchResult />}> </Route>
@@ -34,10 +34,11 @@ const App = () => {
         </Routes>
 
         <Footer />
-      </BrowserRouter>
-    );
-  
-  }
-  
-  
-  export default App
+      </div>
+    </BrowserRouter>
+  );
+
+}
+
+
+export default App
