@@ -1,6 +1,7 @@
 import React from "react"
 import "../style.css"
 import { Link, useNavigate } from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
 
 
 export default function CommonQuestions() {
@@ -17,9 +18,7 @@ export default function CommonQuestions() {
             <div className="search_wrap search_wrap_5">
                 <div className="search_box">
                     <input type="text" className="input" placeholder="Enter SKU, Components ..." />
-                    <div class="btn">
-                        <button onClick={navigateResult}>Search</button>
-                    </div>
+                    <Button variant="primary" onClick={navigateResult}>Search</Button>
                 </div>
             </div>
 
@@ -32,7 +31,6 @@ export default function CommonQuestions() {
                         </Link>
                         <hr />
                         <p> The configurator has a vast filter network that offers a variety of options to choose from. </p>
-                        
                     </div>
 
                     <div class="result">
@@ -41,6 +39,7 @@ export default function CommonQuestions() {
                         <a> </a>
                         <p> The Configurator currently does not support Blade systems.  Recommend to submit manually with your sales representative. </p>
                     </div>
+
                     <div class="result">
                         <h2> Configuration for (insert system name here) does not work </h2>
                         <hr />
@@ -49,6 +48,7 @@ export default function CommonQuestions() {
                         <a> https://my.livechatinc.com/tickets/7Y2UH </a>
 
                     </div>
+
                     <div class="result">
                         <h2> Parts not listed or are missing for configuration on the configurator </h2>
                         <hr />
@@ -58,6 +58,7 @@ export default function CommonQuestions() {
                         <a> https://my.livechatinc.com/tickets/KFSRX </a>
 
                     </div>
+                    
                     <div class="result">
                         <h2> What is the difference between warranties for the systems </h2>
                         <hr />

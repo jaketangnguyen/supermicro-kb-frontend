@@ -160,7 +160,6 @@ HTML, body {
 /*==========================================*/
 /*==========================================*/
 
-
 .site-id {
 	color: white;
 	font-size: 28px;
@@ -206,28 +205,8 @@ a {
 
 a.nav-links {
     color: white;
-    text-decoration: none;
-	
+    text-decoration: none;	
 }
-
-/*a.nav-links:hover {
-	color: white;
-}*/
-
-
-
-/*a:hover {
-    text-decoration: underline;
-	text-shadow:
-      0 0 7px #fff,
-      0 0 10px rgb(28, 106, 207),
-      0 0 21px #fff,
-      0 0 42px rgb(28, 106, 207),
-      0 0 82px rgb(0, 41, 96),
-      0 0 92px rgb(72, 135, 216),
-      0 0 102px rgb(82, 148, 236),
-      0 0 151px rgb(4, 112, 252);
-} */
 
  a span {
     color: white;
@@ -250,12 +229,19 @@ a.nav-links {
 	letter-spacing: -0.05em;
 }
 
-.statement p{
-    color: white;
-	font-weight: 800;
-    font-size: 40;
-	font-family: "Merriweather", serif;
-	text-shadow:
+.statement{
+	justify-content: center;
+	position: relative;
+}
+
+.statement h1{
+    color: rgb(2, 57, 129);
+	font-weight: 100;
+    font-size: 40px;
+	font-family: "roboto" sans-serif; 
+	position: relative;
+	justify-content: center;
+	/* text-shadow:
       0 0 7px #fff,
       0 0 10px rgb(28, 106, 207),
       0 0 21px #fff,
@@ -263,13 +249,12 @@ a.nav-links {
       0 0 82px rgb(0, 41, 96),
       0 0 92px rgb(72, 135, 216),
       0 0 102px rgb(82, 148, 236),
-      0 0 151px rgb(4, 112, 252);
+      0 0 151px rgb(4, 112, 252); */
 }
 
-.statement p:hover {
+/* .statement p:hover {
 	color: white;
-	
-}
+} */
 
 .result h2 {
     font-size: 19px;
@@ -295,8 +280,9 @@ a.nav-links {
 }
 
 .search_wrap .search_box{
+	justify-content: center;
 	position: relative;
-	width: 500px;
+	width: 600px;
 	height: 60px;
 }
 
@@ -307,22 +293,22 @@ a.nav-links {
 	width: 100%;
 	height: 100%;
 	padding: 10px 20px;
-	border-radius: 3px;
-	font-size: 18px;
+	border-radius: 1px;
+	font-size: 16px;
 }
 
 .search_wrap .search_box .btn{
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 60px;
+	width: 100px;
 	height: 100%;
 	background: rgb(2, 57, 129);
 	z-index: 1;
 	cursor: pointer;
 }
 
-.search_wrap .search_box .btn:hover{
+/* .search_wrap .search_box .btn:hover{
 	text-shadow:
       0 0 7px #fff,
       0 0 10px rgb(28, 106, 207),
@@ -332,7 +318,7 @@ a.nav-links {
       0 0 92px rgb(72, 135, 216),
       0 0 102px rgb(82, 148, 236),
       0 0 151px rgb(4, 112, 252);	
-}
+} */
 
 .search_wrap .search_box .btn.btn_common .fas{
 	position: absolute;
@@ -340,7 +326,6 @@ a.nav-links {
 	left: 50%;
 	transform: translate(-50%,-50%);
 	color: #fff;
-	font-size: 20px;
 }
 
 .search_wrap.search_wrap_6 .search_box .btn,
@@ -349,26 +334,26 @@ a.nav-links {
 	height: 45px;
 	top: 8px;
 	right: 5px;
-	border-radius: 3px;
+	border-radius: 5px;
 	color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.search_wrap.search_wrap_5 .search_box .input,
+/* .search_wrap.search_wrap_5 .search_box .input,
 .search_wrap.search_wrap_6 .search_box .input{
 	padding-right: 145px;
-}
+} */
 
 .resultsSpace{
 	margin-left: 150px;
+	margin-bottom: 50px;
 	display: flex;
 	width: 100%;
 	display: table;
 	justify-content: right;
 	flex-direction: column;
-	
 }
 
 .result{
@@ -377,21 +362,31 @@ a.nav-links {
 	flex-direction: column;
 }
 
+button {
+	background-color: rgb(2, 57, 129);
+	color: white; 
+	box-shadow: none;
+	
+}
+
 /* Sidebar */
 
 .sBarCat{
-	font-size: 20px; 
+	font-size: 20px;
+	margin-bottom: 10; 
 }
 
 .sidebar{
 	position: absolute;
 	display: flex;
 	list-style: none;
+	margin: 20;
+	flex-direction: column;
+	
 }
 
 .filterList{
 	font-size: 15px;
-	
 }
 
 /* Footer Styles */
@@ -473,8 +468,10 @@ a.nav-links {
 }
 .copyright-text
 {
-  margin:0
+  margin:0;
+  justify-content: center; 
 }
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
@@ -493,6 +490,7 @@ a.nav-links {
     text-align:center
   }
 }
+
 
 /* Article */
 

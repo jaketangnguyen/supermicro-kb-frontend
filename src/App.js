@@ -25,6 +25,7 @@ const App = () => {
       </div>
 
       <Header />
+
       <div className="pageContainer">
         <Routes>
           <Route path="/" element={<Search />}> </Route>
@@ -41,6 +42,5 @@ const App = () => {
   );
 
 }
-
 
 export default App

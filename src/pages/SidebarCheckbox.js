@@ -20,7 +20,7 @@ class SidebarCheckbox extends React.Component {
     return (
       <Tab.Container>
         <Row>
-          <Col sm={2}>
+          <Col sm={4}>
 
             <ListGroup className="sidebar">
               

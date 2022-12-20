@@ -2,6 +2,7 @@ import React from "react"
 import "../style.css"
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
+import Button from 'react-bootstrap/Button'
 
 import { BrowserRouter as Route, useNavigate } from 'react-router-dom'
 
@@ -12,125 +13,127 @@ export default function ProductFamily() {
         navigate('/Search');
     };
 
+    const stateChange =() => {
+        console.log("test"); 
+    }
+
     return (
         <div>
             {/* <Header /> */}
             <div className="search_wrap search_wrap_5">
                 <div className="search_box">
                     <input type="text" className="input" placeholder="Enter SKU, Components ..." />
-                    <div class="btn">
-                        <button onClick={navigateResult}>Search</button>
-                    </div>
+                    <Button variant="primary" onClick={navigateResult}>Search</Button>
                 </div>
             </div>
 
-
             <div class="container">
                 <div class="resultsSpace">
+                    
                     <div class="result">
                         <h2> Product Family Page</h2>
                     </div>
 
-                    <Row >
-                        <Card  style={{ width: '18rem'}}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                    <Row className= "g-4">
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer"}}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/sites/default/files/product/normal/SYS-2029U-TN24R4T.png" />
                             <Card.Body>
                                 <Card.Title>Ultra</Card.Title>
                             </Card.Body>
                         </Card>
                                             
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/mainImages/SYS-110P-WTR_main.jpg" />
                             <Card.Body>
                                 <Card.Title>UP</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/productSelector/SYS-120TP-DC9TR_main.png" />
                             <Card.Body>
                                 <Card.Title>Twin</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/productSelector/SYS-420GP-TNAR+_main.png" />
                             <Card.Body>
                                 <Card.Title>GPU</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/mainImages/SSG-620P-ACR12H_main.jpg" />
                             <Card.Body>
                                 <Card.Title>Storage</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/productSelector/SYS-510P-MR_main.png" />
                             <Card.Body>
                                 <Card.Title>Mainstream</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/productSelector/SYS-120C-TN10R_main.png" />
                             <Card.Body>
                                 <Card.Title>CloudDC</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/a_images/products/Aplus/system/1U/AS-1014S-WTRT.jpg" />
                             <Card.Body>
                                 <Card.Title>AMD</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/productSelector/SYS-E100-12T-C_main.png"/>
                             <Card.Body>
-                                <Card.Title>Card</Card.Title>
+                                <Card.Title>IOT</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/mainImages/SYS-120H-TNR_main.jpg" />
                             <Card.Body>
-                                <Card.Title>Card</Card.Title>
+                                <Card.Title>Hyper</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/mainImages/SYS-740A-T_main.jpg" />
                             <Card.Body>
-                                <Card.Title>Card</Card.Title>
+                                <Card.Title>Super Workstation</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/a_images/products/SuperServer/1U/SYS-1029P-WT.jpg" />
                             <Card.Body>
-                                <Card.Title>Card</Card.Title>
+                                <Card.Title>WIO</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/productSelector/SYS-530MT-H8TNR_main.png" />
                             <Card.Body>
-                                <Card.Title>Card</Card.Title>
+                                <Card.Title>Micro Cloud</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            <Card.Img variant="top" src="https://www.supermicro.com/a_images/products/superserver/tower/SYS-5029C-T_close.jpg" />
                             <Card.Body>
-                                <Card.Title>Card</Card.Title>
+                                <Card.Title>Up Workstation</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card style={{ width: '18rem' }}>
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
                             <Card.Img variant="top" src="holder.js/100px180" />
                             <Card.Body>
                                 <Card.Title>Card</Card.Title>
@@ -140,10 +143,6 @@ export default function ProductFamily() {
                 </div>
             </div>
             {/* <Footer /> */}
-
-
-
-
 
         </div>
     )

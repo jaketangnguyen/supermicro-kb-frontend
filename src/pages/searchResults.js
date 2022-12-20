@@ -7,9 +7,13 @@ const CATEGORIES = [
     "Questions & Answers",
     "Articles",
     "Others",
-    "stuff",
-    "more stuff",
-    "even more stuff"
+    "System",
+    "CPU",
+    "Memory", 
+    "Storage",
+    "GPU", 
+    "Network", 
+    "Storage Controller" 
 
 ]
 
