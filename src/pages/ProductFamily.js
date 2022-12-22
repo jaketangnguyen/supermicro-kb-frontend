@@ -29,10 +29,6 @@ export default function ProductFamily() {
 
             <div class="container">
                 <div class="resultsSpace">
-                    
-                    <div class="result">
-                        <h2> Product Family Page</h2>
-                    </div>
 
                     <Row className= "g-4">
                         <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer"}}>
@@ -134,9 +130,9 @@ export default function ProductFamily() {
                         </Card>
 
                         <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/Chassis/cse-216be2c-920jbod_front.jpg" />
                             <Card.Body>
-                                <Card.Title>Card</Card.Title>
+                                <Card.Title>JBOD</Card.Title>
                             </Card.Body>
                         </Card>
                     </Row>

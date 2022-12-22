@@ -11,6 +11,7 @@ const CATEGORIES = [
     "CPU",
     "Memory", 
     "Storage",
+    "AOC",
     "GPU", 
     "Network", 
     "Storage Controller" 

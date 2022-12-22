@@ -12,6 +12,10 @@ export default function Components() {
         navigate('/Search');
     };
 
+    const stateChange = () => {
+        console.log("test");
+    }
+
     return (
         <div>
             {/* <Header /> */}
@@ -32,45 +36,51 @@ export default function Components() {
                         <p>                   </p>
                     </div>
 
-                <Row>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card</Card.Title>
+                    <Row>
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            
+                            <Card.Body>
+                                <Card.Title>CPU</Card.Title>
+                            </Card.Body>
+                        </Card>
 
-                        </Card.Body>
-                    </Card>
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            
+                            <Card.Body>
+                                <Card.Title>Memory</Card.Title>
+                            </Card.Body>
+                        </Card>
 
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card</Card.Title>
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            
+                            <Card.Body>
+                                <Card.Title>Storage Related</Card.Title>
+                            </Card.Body>
+                        </Card>
 
-                        </Card.Body>
-                    </Card>
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            
+                            <Card.Body>
+                                <Card.Title>GPU</Card.Title>
+                            </Card.Body>
+                        </Card>
 
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card</Card.Title>
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            
+                            <Card.Body>
+                                <Card.Title>Networking</Card.Title>
+                            </Card.Body>
+                        </Card>
 
-                        </Card.Body>
-                    </Card>
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
+                            
+                            <Card.Body>
+                                <Card.Title>Misc.</Card.Title>
+                            </Card.Body>
+                        </Card>
 
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card</Card.Title>
 
-                        </Card.Body>
-                    </Card>                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card</Card.Title>
-
-                        </Card.Body>
-                    </Card>
-                </Row>
+                    </Row>
                 </div>
             </div>
             {/* <Footer /> */}
