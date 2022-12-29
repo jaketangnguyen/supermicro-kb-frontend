@@ -1,7 +1,7 @@
 import "./style.css"
 import Header from "./pages/Header"
 import Search from './pages/Search'
-import HeroSection from "./pages/HeroSection";
+import HomepageBody from "./pages/HomepageBody";
 import SearchResult from './pages/searchResults';
 import Footer from "./pages/Footer"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -29,7 +29,7 @@ const App = () => {
 
       <div className="pageContainer">
         <Routes>
-          <Route path="/" element={<HeroSection />}> </Route>
+          <Route path="/" element={<HomepageBody />}> </Route>
           <Route path="/search" element={<SearchResult />}> </Route>
           <Route path="/Components" element={<Components />}> </Route>
           <Route path="/ProductFamily" element={<ProductFamily />}> </Route>

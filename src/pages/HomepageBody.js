@@ -1,12 +1,12 @@
+/* This page consists of formatting and content for the main body of the homepage*/
+
 import React from "react"
 import "../style.css"
 import Button from 'react-bootstrap/Button'
 import { useNavigate } from 'react-router-dom'
-//import ReactPlayer from 'react-player/youtube'
-//ReactPlayer url='https://www.youtube.com/watch?v=6BtF7iICA5I' autoPlay loop muted
-//<video src='https://www.youtube.com/watch?v=6BtF7iICA5I' autoPlay loop muted /> (meant to go above header under hero-container)
 
-export default function HeroSection()
+
+export default function HomepageBody()
 {
     const navigate = useNavigate();
 
@@ -16,9 +16,12 @@ export default function HeroSection()
 
     return(
         <div>
-            <div className="hero-container">
-                <h1>Supermicro FAQ</h1>
+            {/* Background image added in className css section */}
+            <div className="body-container">
+                {/* Header statement */}
+                <h1>Supermicro FAQ</h1> 
                 
+                {/* Search box button with navigation */}
                 <div className="search_wrap search_wrap_5">
                 <div className="search_box">
                     <input type="text" className="input" placeholder="Enter SKU, Components ..." />
