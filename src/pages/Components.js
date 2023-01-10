@@ -3,6 +3,7 @@ import "../style.css"
 import { BrowserRouter as Route, useNavigate } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
+import Button from 'react-bootstrap/Button'
 
 export default function Components() {
 
@@ -22,9 +23,7 @@ export default function Components() {
             <div className="search_wrap search_wrap_5">
                 <div className="search_box">
                     <input type="text" className="input" placeholder="Enter SKU, Components ..." />
-                    <div class="btn">
-                        <button onClick={navigateResult}>Search</button>
-                    </div>
+                    <Button variant="primary" onClick={navigateResult}>Search</Button>
                 </div>
             </div>
 

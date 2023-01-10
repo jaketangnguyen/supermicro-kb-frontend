@@ -29,55 +29,77 @@ class SidebarCheckbox extends React.Component {
                   {'Categories'}
                 </header>
 
-                <ListGroup>
-                  <ListGroup.Item >
-                    <label>
-                      <input type="checkbox" /> {'Questions & Answers'}
-                    </label>
+                {this.props.categories.map(category => (
+
+                  <ListGroup.Item className="filterList" key={category}>
+
+                      <input
+                        onChange={this.handleChange}
+                        type="checkbox"
+                        value={category} />
+
+                      {category}
+
                   </ListGroup.Item>
-                  <ListGroup.Item >
-                    <label>
-                      <input type="checkbox" /> {'Articles'}
-                    </label>
-                  </ListGroup.Item>
-                  <ListGroup.Item >
-                    <label>
-                      <input type="checkbox" /> {'Others'}
-                    </label>
-                  </ListGroup.Item>
-                </ListGroup>
+                ))}
 
                 <ListGroup>
 
                   <header className="sBarCat">
                     {'Components'}
                   </header>
-                  
+
                   <ListGroup.Item >
-                    <input type="checkbox" /> {'System'}
+                    <input type="checkbox" onChange={this.handleChange}/> {'System'}
                   </ListGroup.Item>
                   <ListGroup.Item >
-                    <input type="checkbox" /> {'CPU'}
+                    <input type="checkbox" onChange={this.handleChange}/> {'CPU'}
                   </ListGroup.Item>
                   <ListGroup.Item >
-                    <input type="checkbox" /> {'Memory'}
+                    <input type="checkbox" onChange={this.handleChange}/> {'Memory'}
                   </ListGroup.Item>
                   <ListGroup.Item >
-                    <input type="checkbox" /> {'AOC'}
+                    <input type="checkbox" onChange={this.handleChange}/> {'Storage'}
                   </ListGroup.Item>
                   <ListGroup.Item >
-                    <input type="checkbox" /> {'GPU'}
+                    <input type="checkbox" onChange={this.handleChange}/> {'GPU'}
                   </ListGroup.Item>
                   <ListGroup.Item >
-                    <input type="checkbox" /> {'Network'}
+                    <input type="checkbox" onChange={this.handleChange}/> {'AOC Storage'}
                   </ListGroup.Item>
                   <ListGroup.Item >
-                    <input type="checkbox" /> {'Storage Controller'}
+                    <input type="checkbox" onChange={this.handleChange}/> {'AOC Networking'}
                   </ListGroup.Item>
                   <ListGroup.Item >
-                    <input type="checkbox" /> {'category'}
+                    <input type="checkbox" onChange={this.handleChange}/> {'SIOM/AIOM'}
+                  </ListGroup.Item>
+                  <ListGroup.Item >
+                    <input type="checkbox" onChange={this.handleChange}/> {'Accessories'}
+                  </ListGroup.Item>
+                  <ListGroup.Item >
+                    <input type="checkbox" onChange={this.handleChange}/> {'Add-On Part'}
                   </ListGroup.Item>
                 </ListGroup>
+
+                <ListGroup>
+                  <header className="sBarCat">
+                    {'Issue Type'}
+                  </header>
+
+                  <ListGroup.Item >
+                    <input type="checkbox" onChange={this.handleChange}/> {'Product Compatibility'}
+                  </ListGroup.Item>
+                  <ListGroup.Item >
+                    <input type="checkbox" onChange={this.handleChange}/> {'Product information'}
+                  </ListGroup.Item>
+                  <ListGroup.Item >
+                    <input type="checkbox" onChange={this.handleChange}/> {'Product Recommendation'}
+                  </ListGroup.Item>
+                  <ListGroup.Item >
+                    <input type="checkbox" onChange={this.handleChange}/> {'RAID'}
+                  </ListGroup.Item>
+                </ListGroup>
+
                 {/* {this.props.categories.map(category => (
 
                   <ListGroup.Item className="filterList" key={category}>

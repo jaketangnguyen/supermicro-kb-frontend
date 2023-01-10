@@ -373,8 +373,8 @@ button {
 /* Sidebar */
 
 .sBarCat{
-	font-size: 20px;
-	margin-bottom: 10; 
+	font-size: 16px;
+	margin: 10; 
 }
 
 .sidebar{
@@ -387,7 +387,7 @@ button {
 }
 
 .filterList{
-	font-size: 15px;
+	font-size: 16px;
 }
 
 /* Footer Styles */
