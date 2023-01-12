@@ -49,6 +49,7 @@ HTML, body {
 	margin-left: 20px;
 	display: flex;
 	align-items: center;
+	transform: translate(-20%, -3%);
 	/*justify-content: center;*/
 }
 
@@ -139,7 +140,7 @@ HTML, body {
 	  position: absolute;
 	  top: 0;
 	  left: 0;
-	  transform: translate(25%, 50%);
+	  transform: translate(-10%, 10%);
 	}
   
 	.menu-icon {

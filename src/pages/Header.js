@@ -15,7 +15,7 @@ export default function Header() {
         <header className="header">
             <nav className="nav">
                 <div className="nav-container">
-                    <Link to='/' className="logo">
+                    <Link to='/' className="logo" onClick={closeMobileMenu}>
                         <img className="logo" src={require("../Photos/smc.png")}/>
                     </Link>
 
