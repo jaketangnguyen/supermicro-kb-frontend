@@ -65,25 +65,29 @@ HTML, body {
   }
 
 .nav-items {
-  	display: flex;
-  	list-style: none;
-  	/*justify-content: space-between;*/
-	align-items: center;
-  	font-size: 16px;
-	font-style: normal;
 	height: 80px;
 }
 
-.nav-items:hover{
+/*changed nav-items:hover to nav-links:hover since I was moving css properties over to nav-links*/
+.nav-links:hover{
 	text-decoration: none;
 	border-bottom: 4px solid #fff;
 	transition: all 0.15s ease-out;
 	color: #fff; /*fixed issue of header word sections turning blue when mouse is hovering over them*/
 }
 
+/*moved majority of css format from nav-items to nav-links allowed the area around the word to function as a link, 
+vs only having the word act as the link with the space around it non-interactive*/
 .nav-links {
-  /*padding: 5px 10px 5px;*/
+	display: flex;
+  	list-style: none;
+  	/*justify-content: space-between;*/
+	align-items: center;
+  	font-size: 16px;
+	font-style: normal;
+  	/*padding: 5px 10px 5px;*/
 	padding: 0.5rem 1rem;
+	height: 100%; /*brings the header words lower & centers it*/
 }
 
 .fa-bars {
