@@ -1,6 +1,6 @@
-import React, { useState } from "react"
-import "../style.css"
-import { Link, Routes, Route } from 'react-router-dom'
+import React, { useState } from "react";
+import "../style.css";
+import { Link, Routes, Route } from 'react-router-dom';
 
 export default function Header() {
     //using font-awesome hamburger

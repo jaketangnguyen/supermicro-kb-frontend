@@ -1,14 +1,14 @@
 import "./style.css"
-import Header from "./pages/Header"
-import Search from './pages/Search'
+import Header from "./pages/Header";
+import Search from './pages/Search';
 import HomepageBody from "./pages/HomepageBody";
 import SearchResult from './pages/searchResults';
-import Footer from "./pages/Footer"
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Footer from "./pages/Footer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CommonQuestions from "./pages/CommonQuestions";
 import Components from "./pages/Components";
 import ProductFamily from "./pages/ProductFamily";
-import Article from "./pages/ArticlePage"
+import Article from "./pages/ArticlePage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {

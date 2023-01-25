@@ -1,7 +1,7 @@
-import React from "react"
-import "../style.css"
-import { Link, useNavigate } from 'react-router-dom'
-import Button from 'react-bootstrap/Button'
+import React from "react";
+import "../style.css";
+import { Link, useNavigate } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 
 
 export default function CommonQuestions() {

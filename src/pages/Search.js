@@ -1,7 +1,7 @@
-import React from "react"
-import Button from 'react-bootstrap/Button'
-import "../style.css"
-import { BrowserRouter as Route, useNavigate } from 'react-router-dom'
+import React from "react";
+import Button from 'react-bootstrap/Button';
+import "../style.css";
+import { BrowserRouter as Route, useNavigate } from 'react-router-dom';
 
 export default function Search() {
 

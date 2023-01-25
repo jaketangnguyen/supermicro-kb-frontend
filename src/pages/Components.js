@@ -1,9 +1,9 @@
-import React from "react"
-import "../style.css"
-import { BrowserRouter as Route, useNavigate } from 'react-router-dom'
-import Card from 'react-bootstrap/Card'
-import Row from 'react-bootstrap/Row'
-import Button from 'react-bootstrap/Button'
+import React from "react";
+import "../style.css";
+import { BrowserRouter as Route, useNavigate } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 
 export default function Components() {
 

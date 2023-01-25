@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import Button from 'react-bootstrap/Button'
-import "../style.css"
-import { useNavigate, createSearchParams, useLocation } from "react-router-dom"
+import React, { useState } from "react";
+import Button from 'react-bootstrap/Button';
+import "../style.css";
+import { useNavigate, createSearchParams, useLocation } from "react-router-dom";
 
 export default function SearchInput()
 {
@@ -11,7 +11,7 @@ export default function SearchInput()
 
     const navigateResult = () => {
         navigate({
-            pathname: state.pathname==="/Search"? ".":"Search",
+            pathname: state.pathname === "/Search"? ".":"Search",
             search: `?${createSearchParams({
                 query: search
             })}`

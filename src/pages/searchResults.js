@@ -1,9 +1,9 @@
-import React from "react"
-
-import Search from "./Search";
+import React from "react";
 import SidebarCheckbox from "./SidebarCheckbox";
-import API from "../services/API"
+import API from "../services/API";
 import SearchInput from "./SearchInput";
+import "../style.css";
+
 
 const CATEGORIES = [
     "Questions & Answers",
@@ -88,23 +88,26 @@ const ISSUE_TYPE = [
 // ];
 
 class SearchResults extends React.Component {
-
     constructor(props) {
         super(props);
 
-        this.handleFilterChange = this.handleFilterChange.bind(this);
-        this.state = { categories: CATEGORIES, entries: [], filters: new Set() };
+        this.state = {
+            categories: CATEGORIES, 
+            entries: [], 
+            filters: new Set(),
+            currentPage: 1, 
+            entriesPerPage: 5
+        };
         const windowUrl = window.location.search;
         this.query = new URLSearchParams(windowUrl).get("query");
         console.log("Check the query value:"+ this.query);
     }
 
-
     componentDidMount(){
         console.log("Component did mount");
-        console.log("Print out query"+this.query);
+        console.log("Print out query: "+this.query);
         const api = new API();
-        api.getEntries(this.query).then((response)=>{
+        api.getEntries(this.query).then((response) => {
             console.log(response.data);
             this.setState({entries: response.data});
             console.log("Time to check the entries: "+this.state.entries);
@@ -129,47 +132,65 @@ class SearchResults extends React.Component {
             console.log(fil);
             if (fil.size) {
                 ent = ent.filter(entry => {
-                    return fil.has(entry.category);
+                    return fil.has(entry.category); 
                 })
             }
             return { entries: ent, filters: fil }
         });
     }
 
+    handlePageChange(pageNumber) {
+        this.setState({currentPage: pageNumber});
+    }
+
     render() {
+        const { entries, currentPage, entriesPerPage } = this.state;
+
+        // Logic for displaying current entries
+        const indexOfLastEntry = currentPage * entriesPerPage;
+        const indexOfFirstEntry = indexOfLastEntry - entriesPerPage;
+        const currentEntries = entries.slice(indexOfFirstEntry, indexOfLastEntry);
+
+        // Logic for displaying page numbers
+        const pageNumbers = [];
+        for (let i = 1; i <= Math.ceil(entries.length / entriesPerPage); i++) {
+            pageNumbers.push(i);
+        }
+
         return (
             <div>
-                {/* <Header /> */}
                 <div>
                     <SidebarCheckbox categories={this.state.categories} onFilterChange={this.handleFilterChange} />
                 </div>
                 <div>
-                    <div>
-                        <Search />
-                    </div>
-
-                    <div class="container">
-                        <div class="resultsSpace">
-                            {
-                                this.state.entries.map((entry, index) => (
-                                    <div class="result">
-                                        <h2>{entry.title}</h2>
+                        <SearchInput />
+                </div>
+                <div class="container">
+                    <div class="resultsSpace">
+                        {
+                            currentEntries.map((entry, index) => (
+                                <div class="result">
+                                    <h2>{entry.subject}</h2>
                                         <hr />
                                         <a href={entry.url}>{entry.url}</a>
-                                        <p>{entry.body}</p>
-                                    </div>
-                                ))
-                            }
-                        </div>
+                                        <p>{entry.explanation}</p>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div class="pagination">
+                        {
+                            pageNumbers.map(number => (
+                                <button class="page-button" onClick={() => this.handlePageChange(number)}>{number}</button>
+                            ))
+                        }
                     </div>
                 </div>
-                {/* <Footer /> */}
             </div>
         )
-    }
-
+    }   
 }
 
-export default SearchResults
+export default SearchResults;
 
 

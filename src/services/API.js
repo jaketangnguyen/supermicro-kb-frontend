@@ -5,7 +5,7 @@ export default class API {
         this.client = null;
         this.url = process.env.REACT_APP_API_ENDPOINT;
     }
-    init = ()=>{
+    init = () => {
         //skip access_token for now
         let headers ={
             Accept: "application/json"
@@ -13,7 +13,7 @@ export default class API {
         this.client = axios.create({baseURL: this.url, timeout: 30000, headers: headers, responseType: "json"});
         return this.client;
     }
-    getEntries = (params)=>{
+    getEntries = (params) => {
         console.log("Hi from API.js");
         console.log(params);
         //http://xxxx/entry/?search=yyy
