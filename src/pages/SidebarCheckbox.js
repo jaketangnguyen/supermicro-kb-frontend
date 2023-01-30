@@ -82,7 +82,6 @@ class SidebarCheckbox extends React.Component {
 
               </ListGroup>
 
-
             </Col>
           </Row>
         </Tab.Container>
