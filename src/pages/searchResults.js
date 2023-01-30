@@ -6,28 +6,29 @@ import "../style.css";
 
 
 const CATEGORIES = [
-    "Questions & Answers",
-    "Articles",
-    "Others"
+    " Questions & Answers",
+    " Articles",
+    " Others"
 ]
 
 const COMPONENTS = [
-    "System", 
-    "CPU", 
-    "Memory",
-    "Storage", 
-    "GPU", 
-    "AOC Storage", 
-    "AOC Networking",
-    "SIOM/AIOM", 
-    "Accessories", 
-    "Add-On Part"
+    " System", 
+    " CPU", 
+    " Memory",
+    " Storage", 
+    " GPU", 
+    " AOC Storage", 
+    " AOC Networking",
+    " SIOM/AIOM", 
+    " Accessories", 
+    " Add-On Part", 
+    " Power Supply"
 ]
 
-const ISSUE_TYPE = [
-    "Product Compatibility", 
-    "Product Information", 
-    "RAID"
+const ISSUETYPE = [
+    " Product Compatibility", 
+    " Product Information", 
+    " RAID"
 ] 
 
 // const ENTRIES = [
@@ -92,7 +93,10 @@ class SearchResults extends React.Component {
         super(props);
 
         this.state = {
+            
             categories: CATEGORIES, 
+            components: COMPONENTS, 
+            issues:ISSUETYPE,
             entries: [], 
             filters: new Set(),
             currentPage: 1, 
@@ -160,7 +164,7 @@ class SearchResults extends React.Component {
         return (
             <div>
                 <div>
-                    <SidebarCheckbox categories={this.state.categories} onFilterChange={this.handleFilterChange} />
+                    <SidebarCheckbox categories={this.state.categories} components={this.state.components} issues={this.state.issues} onFilterChange={this.handleFilterChange} />
                 </div>
                 <div>
                         <SearchInput />
@@ -170,10 +174,10 @@ class SearchResults extends React.Component {
                         {
                             currentEntries.map((entry, index) => (
                                 <div class="result">
-                                    <h2>{entry.subject}</h2>
-                                        <hr />
+                                    <h2>{entry.subject}</h2>                                 
                                         <a href={entry.url}>{entry.url}</a>
                                         <p>{entry.explanation}</p>
+                                        <hr />
                                 </div>
                             ))
                         }

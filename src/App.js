@@ -1,6 +1,5 @@
 import "./style.css"
 import Header from "./pages/Header";
-import Search from './pages/Search';
 import HomepageBody from "./pages/HomepageBody";
 import SearchResult from './pages/searchResults';
 import Footer from "./pages/Footer";
