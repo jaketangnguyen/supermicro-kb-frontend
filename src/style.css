@@ -548,7 +548,7 @@ img{
 /* Homepage body */
 
 .body-container {
-	background: url('Photos/RoadShow.jpg') center center/cover no-repeat;
+	background: url('https://www.supermicro.com/sites/default/files/x13/2023-X13SapphRap_Launch_R05_HomeLandingBanner.png') center center/cover no-repeat;
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -559,4 +559,11 @@ img{
 	padding-top: 100px;
 }
 
+.suggestions{
+	background-color: gray;
+}
+
+.active{
+	color: black;
+}
 /*==============*/

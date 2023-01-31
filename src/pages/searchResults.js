@@ -31,6 +31,7 @@ const ISSUETYPE = [
     " RAID"
 ] 
 
+
 // const ENTRIES = [
 //     {
 //         "id": 1,
@@ -100,7 +101,8 @@ class SearchResults extends React.Component {
             entries: [], 
             filters: new Set(),
             currentPage: 1, 
-            entriesPerPage: 5
+            entriesPerPage: 5, 
+            keywords:[]
         };
         const windowUrl = window.location.search;
         this.query = new URLSearchParams(windowUrl).get("query");
@@ -111,10 +113,16 @@ class SearchResults extends React.Component {
         console.log("Component did mount");
         console.log("Print out query: "+this.query);
         const api = new API();
+        api.getKeywords().then((response)=>{
+            console.log(response.data);
+            this.setState({keywords: response.data.map(({subject}) => subject)});
+        })
+        .catch((err)=> console.log(err));
         api.getEntries(this.query).then((response) => {
             console.log(response.data);
             this.setState({entries: response.data});
             console.log("Time to check the entries: "+this.state.entries);
+            console.log(this.state);
         })
         .catch((err)=> console.log(err));
     }
@@ -167,7 +175,7 @@ class SearchResults extends React.Component {
                     <SidebarCheckbox categories={this.state.categories} components={this.state.components} issues={this.state.issues} onFilterChange={this.handleFilterChange} />
                 </div>
                 <div>
-                        <SearchInput />
+                        <SearchInput autoCompleteDate={this.state.keywords}/>
                 </div>
                 <div class="container">
                     <div class="resultsSpace">

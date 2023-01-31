@@ -19,4 +19,8 @@ export default class API {
         //http://xxxx/entry/?search=yyy
        return this.init().get("/entry/?", {params:{search: params}});
     }
+    getKeywords = ()=>{
+        console.log("Hi from API.js getKeywords()");
+        return this.init().get("/entries");
+    }
 }
