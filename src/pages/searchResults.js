@@ -101,7 +101,7 @@ class SearchResults extends React.Component {
             entries: [], 
             filters: new Set(),
             currentPage: 1, 
-            entriesPerPage: 5, 
+            entriesPerPage: 10, 
             keywords:[]
         };
         const windowUrl = window.location.search;
