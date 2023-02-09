@@ -12,119 +12,63 @@ const CATEGORIES = [
 ]
 
 const COMPONENTS = [
-    " System", 
-    " CPU", 
+    " System",
+    " CPU",
     " Memory",
-    " Storage", 
-    " GPU", 
-    " AOC Storage", 
+    " Storage",
+    " GPU",
+    " AOC Storage",
     " AOC Networking",
-    " SIOM/AIOM", 
-    " Accessories", 
-    " Add-On Part", 
+    " SIOM/AIOM",
+    " Accessories",
+    " Add-On Part",
     " Power Supply"
 ]
 
 const ISSUETYPE = [
-    " Product Compatibility", 
-    " Product Information", 
+    " Product Compatibility",
+    " Product Information",
     " RAID"
-] 
-
-
-// const ENTRIES = [
-//     {
-//         "id": 1,
-//         "title": "Questions & Answers title 1", url: "https://Qnaplaceholder.com",
-//         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.",
-//         "category": "Questions & Answers"
-//     },
-//     {
-//         "id": 2,
-//         "title": "Questions & Answers title 2", url: "https://Qnaplaceholder.com",
-//         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.",
-//         "category": "Questions & Answers"
-//     },
-//     {
-//         "id": 3,
-//         "title": "Questions & Answers title 3", url: "https://Qnaplaceholder.com",
-//         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.",
-//         "category": "Questions & Answers"
-//     },
-//     {
-//         "id": 4,
-//         "title": "Article title 1", url: "https://Qnaplaceholder.com",
-//         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.",
-//         "category": "Articles"
-//     },
-//     {
-//         "id": 5,
-//         "title": "Article title 2", url: "https://Qnaplaceholder.com",
-//         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.",
-//         "category": "Articles"
-//     },
-//     {
-//         "id": 6,
-//         "title": "Article title 3", url: "https://Qnaplaceholder.com",
-//         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.",
-//         "category": "Articles"
-//     },
-//     {
-//         "id": 7,
-//         "title": "Others title 1", url: "https://Qnaplaceholder.com",
-//         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.",
-//         "category": "Others"
-//     },
-//     {
-//         "id": 8,
-//         "title": "Others title 2", url: "https://Qnaplaceholder.com",
-//         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.",
-//         "category": "Others"
-//     },
-//     {
-//         "id": 9,
-//         "title": "Others title 3", url: "https://Qnaplaceholder.com",
-//         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit.",
-//         "category": "Others"
-//     },
-// ];
+]
 
 class SearchResults extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            
-            categories: CATEGORIES, 
-            components: COMPONENTS, 
-            issues:ISSUETYPE,
-            entries: [], 
+
+            categories: CATEGORIES,
+            components: COMPONENTS,
+            issues: ISSUETYPE,
+            entries: [],
             filters: new Set(),
-            currentPage: 1, 
-            entriesPerPage: 10, 
-            keywords:[]
+            currentPage: 1,
+            entriesPerPage: 10,
+            keywords: []
         };
         const windowUrl = window.location.search;
         this.query = new URLSearchParams(windowUrl).get("query");
-        console.log("Check the query value:"+ this.query);
+        console.log("Check the query value:" + this.query);
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log("Component did mount");
-        console.log("Print out query: "+this.query);
+        console.log("Print out query: " + this.query);
         const api = new API();
-        api.getKeywords().then((response)=>{
+
+        /**/
+        api.getKeywords().then((response) => {
             console.log(response.data);
-            this.setState({keywords: response.data.map(({subject}) => subject)});
+            this.setState({ keywords: response.data.map(({ subject }) => subject) });
         })
-        .catch((err)=> console.log(err));
+            .catch((err) => console.log(err));
         api.getEntries(this.query).then((response) => {
             console.log(response.data);
-            this.setState({entries: response.data});
-            console.log("Time to check the entries: "+this.state.entries);
+            this.setState({ entries: response.data });
+            console.log("Time to check the entries: " + this.state.entries);
             console.log(this.state);
         })
-        .catch((err)=> console.log(err));
+            .catch((err) => console.log(err));
     }
 
     handleFilterChange(e) {
@@ -144,7 +88,7 @@ class SearchResults extends React.Component {
             console.log(fil);
             if (fil.size) {
                 ent = ent.filter(entry => {
-                    return fil.has(entry.category); 
+                    return fil.has(entry.category);
                 })
             }
             return { entries: ent, filters: fil }
@@ -152,7 +96,7 @@ class SearchResults extends React.Component {
     }
 
     handlePageChange(pageNumber) {
-        this.setState({currentPage: pageNumber});
+        this.setState({ currentPage: pageNumber });
     }
 
     render() {
@@ -175,21 +119,23 @@ class SearchResults extends React.Component {
                     <SidebarCheckbox categories={this.state.categories} components={this.state.components} issues={this.state.issues} onFilterChange={this.handleFilterChange} />
                 </div>
                 <div>
-                        <SearchInput autoCompleteDate={this.state.keywords}/>
+                    <SearchInput autoCompleteDate={this.state.keyword} />
                 </div>
+
                 <div class="container">
                     <div class="resultsSpace">
                         {
                             currentEntries.map((entry, index) => (
                                 <div class="result">
-                                    <h2>{entry.subject}</h2>                                 
-                                        <a href={entry.url}>{entry.url}</a>
-                                        <p>{entry.explanation}</p>
-                                        <hr />
+                                    <h2>{entry.subject}</h2>
+                                    <a href={entry.url}>{entry.url}</a>
+                                    <p>{entry.explanation}</p>
+                                    <hr />
                                 </div>
                             ))
                         }
                     </div>
+
                     <div class="pagination">
                         {
                             pageNumbers.map(number => (
@@ -200,7 +146,7 @@ class SearchResults extends React.Component {
                 </div>
             </div>
         )
-    }   
+    }
 }
 
 export default SearchResults;

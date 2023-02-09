@@ -10,6 +10,7 @@ export default function Suggestions() {
               key={index}
               onClick={handleClick}
             >
+              
               {suggestion}
             </li>
           );
