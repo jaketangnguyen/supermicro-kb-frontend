@@ -9,6 +9,7 @@ import Components from "./pages/Components";
 import ProductFamily from "./pages/ProductFamily";
 import Article from "./pages/ArticlePage";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PrivateRoute from "./pages/PrivateRoute";
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
       <Header />
 
       <div className="pageContainer">
+      <PrivateRoute> 
         <Routes>
           <Route path="/" element={<HomepageBody />}> </Route>
           <Route path="/search" element={<SearchResult />}> </Route>
@@ -35,6 +37,7 @@ const App = () => {
           <Route path="/ArticlePage" element={<Article />}> </Route>
           <Route path="/CommonQuestions" element={<CommonQuestions />}> </Route>
         </Routes>
+      </PrivateRoute>
       </div>
       <Footer />
 
