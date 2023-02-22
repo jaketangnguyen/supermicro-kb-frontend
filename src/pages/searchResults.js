@@ -4,7 +4,6 @@ import API from "../services/API";
 import SearchInput from "./SearchInput";
 import "../style.css";
 
-
 const CATEGORIES = [
     " Questions & Answers",
     " Articles",

@@ -4,10 +4,10 @@ import { Link, Routes, Route } from 'react-router-dom';
 
 export default function Header() {
     //using font-awesome hamburger
-    const [click, setClick] = useState(false); 
+    const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click); //reverses the state
     const closeMobileMenu = () => setClick(false); //setting default close state for hamburger
-    
+
     /*Uses HTML DOM Events*/
     /*window.addEventListener('')*/
 
@@ -16,11 +16,11 @@ export default function Header() {
             <nav className="nav">
                 <div className="nav-container">
                     <Link to='/' className="logo" onClick={closeMobileMenu}>
-                        <img className="logo" src={require("../Photos/smc.png")}/>
+                        <img className="logo" src={require("../Photos/smc.png")} />
                     </Link>
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
-                                    
+
                         <li className="nav-items">
                             <Link to="/CommonQuestions" className="nav-links" onClick={closeMobileMenu}>
                                 Common Questions
@@ -32,12 +32,18 @@ export default function Header() {
                                 Product Family
                             </Link>
                         </li>
-                        
+
                         <li className="nav-items">
                             <Link to="/Components" className="nav-links" onClick={closeMobileMenu}>
                                 Components
                             </Link>
                         </li>
+
+                        <li className="nav-items">
+                            {UserAuth.getUsername()}&nbsp;
+                            <button onClick={UserAuth.doLogout}>Logout</button>
+                        </li>
+                    
                     </ul>
 
                     {/*using font-awesome hamburger*/}
