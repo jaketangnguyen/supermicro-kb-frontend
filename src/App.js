@@ -28,16 +28,16 @@ const App = () => {
       <Header />
 
       <div className="pageContainer">
-      <PrivateRoute> 
-        <Routes>
-          <Route path="/" element={<HomepageBody />}> </Route>
-          <Route path="/search" element={<SearchResult />}> </Route>
-          <Route path="/Components" element={<Components />}> </Route>
-          <Route path="/ProductFamily" element={<ProductFamily />}> </Route>
-          <Route path="/ArticlePage" element={<Article />}> </Route>
-          <Route path="/CommonQuestions" element={<CommonQuestions />}> </Route>
-        </Routes>
-      </PrivateRoute>
+        <PrivateRoute>
+          <Routes>
+            <Route path="/" element={<HomepageBody />}> </Route>
+            <Route path="/search" element={<SearchResult />}> </Route>
+            <Route path="/Components" element={<Components />}> </Route>
+            <Route path="/ProductFamily" element={<ProductFamily />}> </Route>
+            <Route path="/ArticlePage" element={<Article />}> </Route>
+            <Route path="/CommonQuestions" element={<CommonQuestions />}> </Route>
+          </Routes>
+        </PrivateRoute>
       </div>
       <Footer />
 

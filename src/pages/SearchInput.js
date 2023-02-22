@@ -99,6 +99,9 @@ export default function SearchInput(props)
             <input type="search" className="input" value={value} placeholder="Enter SKU, Components ..." onChange={handleChange} onKeyDown={handleKeyDown}/>
                 <Button variant="primary" onClick={navigateResult}>Search</Button>
                 {suggestionsActive && <Suggestions />}
+                <br/>
+                <br/>
+                <br/>
             </div>
         </div>
     )
