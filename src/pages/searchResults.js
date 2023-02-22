@@ -89,7 +89,7 @@ class SearchResults extends React.Component {
             if (fil.size) {
                 ent = ent.filter(entry => {
                     let tags = entry.tag.map(({tag_name}) => tag_name);
-                    console.log(`Filter has entry.category: ${fil.has(entry.category)}.`};
+                    console.log(`Filter has entry.category: ${fil.has(entry.category)}.`);
                     return fil.has(entry.category);
                 })
             }
