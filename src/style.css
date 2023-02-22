@@ -239,8 +239,8 @@ a.nav-links {
 }
 
 .search_wrap{
-	width: 500px;
-	margin: 38px auto;
+	width: 600px; /*fixing searchbar*/
+	margin: 10px auto;
 }
 
 .search_wrap .statement {
