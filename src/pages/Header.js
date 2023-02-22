@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../style.css";
 import { Link, Routes, Route } from 'react-router-dom';
+import UserAuth from "../services/UserAuth";
 
 export default function Header() {
     //using font-awesome hamburger
