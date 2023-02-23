@@ -45,6 +45,7 @@ class SearchResults extends React.Component {
             entriesPerPage: 10,
             keywords: []
         };
+        this.handleFilterChange = this.handleFilterChange.bind(this);
         const windowUrl = window.location.search;
         this.query = new URLSearchParams(windowUrl).get("query");
         console.log("Check the query value:" + this.query);
