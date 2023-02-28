@@ -17,7 +17,7 @@ export default class API {
         console.log("Hi from API.js");
         console.log(params);
         //http://xxxx/entry/?search=yyy
-       return this.init().get("/api/entry/?", {params:{search: params}});
+       return this.init().get("/entry/?", {params:{search: params}});
     }
 
     getKeywords = ()=>{
