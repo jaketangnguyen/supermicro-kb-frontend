@@ -40,6 +40,7 @@ class SearchResults extends React.Component {
             components: COMPONENTS,
             issues: ISSUETYPE,
             entries: [],
+            allEntries: [],
             filters: new Set(),
             currentPage: 1,
             entriesPerPage: 10,
@@ -64,7 +65,7 @@ class SearchResults extends React.Component {
             .catch((err) => console.log(err));
         api.getEntries(this.query).then((response) => {
             console.log(response.data);
-            this.setState({ entries: response.data });
+            this.setState({ entries: response.data, allEntries: response.data });
             console.log("Time to check the entries: " + this.state.entries);
             console.log(this.state);
         })
@@ -92,6 +93,8 @@ class SearchResults extends React.Component {
                     console.log(`Filter has entry.category: ${fil.has(entry.category)}.`);
                     return fil.has(entry.category);
                 })
+            } else {
+                ent = this.state.allEntries;
             }
             return { entries: ent, filters: fil }
         });
