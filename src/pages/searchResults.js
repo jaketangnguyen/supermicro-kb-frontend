@@ -73,25 +73,28 @@ class SearchResults extends React.Component {
     }
 
     handleFilterChange(e) {
-        console.log('The checkbox was toggled');
-        console.log(e.target);
         this.setState(previousState => {
             let fil = new Set(previousState.filters);
             let ent = this.state.entries;
-            console.log("current ent: ");
-            console.log(ent);
             if (e.target.checked) {
                 fil.add(e.target.value);
             } else {
                 fil.delete(e.target.value);
             }
-            console.log("current filter: ");
-            console.log(fil);
             if (fil.size) {
                 ent = ent.filter(entry => {
-                    let tags = entry.tag.map(({tag_name}) => tag_name);
-                    console.log(`Filter has entry.category: ${fil.has(entry.category)}.`);
-                    return fil.has(entry.category);
+                    let tags = new Set();
+                    let isFound = false;
+                    for(let[tag, tag_properties] of Object.entries(entry.tag)){
+                            tags.add(tag_properties.tag_name);
+                    }
+                    for(var tag of tags){
+                            if(fil.has(tag)){
+                                    isFound = true;
+                                    break;
+                            }
+                    }
+                        return fil.has(entry.category) || isFound;
                 })
             } else {
                 ent = this.state.allEntries;
@@ -99,6 +102,7 @@ class SearchResults extends React.Component {
             return { entries: ent, filters: fil }
         });
     }
+
 
     handlePageChange(pageNumber) {
         this.setState({ currentPage: pageNumber });
