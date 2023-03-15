@@ -12,7 +12,7 @@ export default function ProductFamily() {
     const navigateResult = () => {
         navigate('/Search');
     };
-
+    /*
     const stateChange = (e) => {
         let el = e.currentTarget.getElementByClassName('card-title h5');
         let family = el[0].textContent;
@@ -21,8 +21,22 @@ export default function ProductFamily() {
             search: `?${createSearchParams({
                 query: family
             })}`
-        });
+        });    
     }
+    */
+    const stateChange =(e) => {
+	let el = e.currentTarget.getElementsByClassName('card-title h5');
+	let family = el[0].textContent;
+	let path = state.pathname;
+	console.log(path);
+	navigate({
+		pathname:  "/Search",
+		search: `?${createSearchParams({
+			query: family
+		})}`
+	});
+    }
+
 
     return (
         <div>
