@@ -5,29 +5,29 @@ import SearchInput from "./SearchInput";
 import "../style.css";
 
 const CATEGORIES = [
-    " Questions & Answers",
-    " Articles",
-    " Others"
+    "Questions & Answers",
+    "Articles",
+    "Others"
 ]
 
 const COMPONENTS = [
-    " System",
-    " CPU",
-    " Memory",
-    " Storage",
-    " GPU",
-    " AOC Storage",
-    " AOC Networking",
-    " SIOM/AIOM",
-    " Accessories",
-    " Add-On Part",
-    " Power Supply"
+    "System",
+    "CPU",
+    "Memory",
+    "Storage",
+    "GPU",
+    "AOC Storage",
+    "AOC Networking",
+    "SIOM/AIOM",
+    "Accessories",
+    "Add-On Part",
+    "Power Supply"
 ]
 
 const ISSUETYPE = [
-    " Product Compatibility",
-    " Product Information",
-    " RAID"
+    "Product Compatibility",
+    "Product Information",
+    "RAID"
 ]
 
 class SearchResults extends React.Component {
