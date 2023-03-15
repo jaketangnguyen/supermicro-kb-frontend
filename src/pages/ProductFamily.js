@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
-import { BrowserRouter as Route, useNavigate } from 'react-router-dom'
+import { BrowserRouter as Route, useNavigate, createSearchParams } from 'react-router-dom'
 
 export default function ProductFamily() {
     const navigate = useNavigate();
@@ -13,8 +13,15 @@ export default function ProductFamily() {
         navigate('/Search');
     };
 
-    const stateChange =() => {
-        console.log("test"); 
+    const stateChange = (e) => {
+        let el = e.currentTarget.getElementByClassName('card-title h5');
+        let family = el[0].textContent;
+        navigate({
+            pathname: "/Search",
+            search: `?${createSearchParams({
+                query: family
+            })}`
+        });
     }
 
     return (
