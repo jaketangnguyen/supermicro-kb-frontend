@@ -13,8 +13,15 @@ export default function Components() {
         navigate('/Search');
     };
 
-    const stateChange = () => {
-        console.log("test");
+    const stateChange =(e) => {
+	let el = e.currentTarget.getElementsByClassName('card-title h5');
+	let component = el[0].textContent;
+	navigate({
+		pathname:  "/Search",
+		search: `?${createSearchParams({
+			query: component
+		})}`
+	});
     }
 
     return (
