@@ -61,15 +61,14 @@ class SearchResults extends React.Component {
         api.getKeywords().then((response) => {
             console.log(response.data);
             this.setState({ keywords: response.data.map(({ subject }) => subject) });
-        })
-            .catch((err) => console.log(err));
+        }).catch((err) => console.log(err));
+        
         api.getEntries(this.query).then((response) => {
             console.log(response.data);
             this.setState({ entries: response.data, allEntries: response.data });
             console.log("Time to check the entries: " + this.state.entries);
             console.log(this.state);
-        })
-            .catch((err) => console.log(err));
+        }).catch((err) => console.log(err));
     }
 
     handleFilterChange(e) {
