@@ -10,8 +10,15 @@ export default function Components() {
     const navigate = useNavigate();
 
     const navigateResult = () => {
-        navigate('/Search');
+        let value = document.getElementById('search-value').value;
+        navigate({
+                pathname: "/Search",
+                search: `?${createSearchParams({
+                        query: value
+                })}`
+        });
     };
+
 
     const stateChange =(e) => {
 	let el = e.currentTarget.getElementsByClassName('card-title h5');
@@ -29,7 +36,7 @@ export default function Components() {
             {/* <Header /> */}
             <div className="search_wrap search_wrap_5">
                 <div className="search_box">
-                    <input type="text" className="input" placeholder="Enter SKU, Components ..." />
+                    <input type="text" id="search-value" className="input" placeholder="Enter SKU, Components ..." />
                     <Button variant="primary" onClick={navigateResult}>Search</Button>
                 </div>
             </div>
