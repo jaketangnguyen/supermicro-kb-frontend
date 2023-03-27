@@ -3,15 +3,27 @@ import "../style.css";
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
+import SearchInput from "./SearchInput";
+import API from "../services/API";
+import { useState, useEffect } from 'react';
+
 
 import { BrowserRouter as Route, useNavigate, createSearchParams } from 'react-router-dom'
 
 export default function ProductFamily() {
     const navigate = useNavigate();
+    const [keywords, setKeywords] = useState([]);
 
     const navigateResult = () => {
-        navigate('/Search');
+        let value = document.getElementById('search-value').value;
+        navigate({
+                pathname: "/Search",
+                search: `?${createSearchParams({
+                        query: value
+                })}`
+        });
     };
+
 	
     const stateChange =(e) => {
 	let el = e.currentTarget.getElementsByClassName('card-title h5');
@@ -30,7 +42,7 @@ export default function ProductFamily() {
             {/* <Header /> */}
             <div className="search_wrap search_wrap_5">
                 <div className="search_box">
-                    <input type="text" className="input" placeholder="Enter SKU, Components ..." />
+                    <input type="text" id="search-value" className="input" placeholder="Enter SKU, Components ..." />
                     <Button variant="primary" onClick={navigateResult}>Search</Button>
                 </div>
             </div>
