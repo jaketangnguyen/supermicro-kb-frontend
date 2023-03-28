@@ -130,26 +130,28 @@ class SearchResults extends React.Component {
                     <SearchInput autoCompleteDate={this.state.keyword} />
                 </div>
 
-                <div class="container">
-                    <div class="resultsSpace">
-                        {
-                            currentEntries.map((entry, index) => (
-                                <div class="result">
-                                    <h2>{entry.subject}</h2>
-                                    <a href={entry.url}>{entry.url}</a>
-                                    <p>{entry.explanation}</p>
-                                    <hr />
-                                </div>
-                            ))
-                        }
-                    </div>
+                <div class="page_body">
+                    <div class="result_container">
+                        <div class="resultsSpace">
+                            {
+                                currentEntries.map((entry, index) => (
+                                    <div class="result">
+                                        <h2>{entry.subject}</h2>
+                                        <a href={entry.url}>{entry.url}</a>
+                                        <p>{entry.explanation}</p>
+                                        <hr />
+                                    </div>
+                                ))
+                            }
+                        </div>
 
-                    <div class="pagination">
-                        {
-                            pageNumbers.map(number => (
-                                <button class="page-button" onClick={() => this.handlePageChange(number)}>{number}</button>
-                            ))
-                        }
+                        <div class="pagination">
+                            {
+                                pageNumbers.map(number => (
+                                    <button class="page-button" onClick={() => this.handlePageChange(number)}>{number}</button>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
