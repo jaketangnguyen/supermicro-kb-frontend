@@ -191,13 +191,32 @@ vs only having the word act as the link with the space around it non-interactive
 	background-size: cover;
 }
 
+
+.page_body{
+	min-height: 800px;
+}
+
+
+.result_container {
+	align-items: center;
+	display: flex; 
+	flex-direction: column;
+	width: 78%;
+	position: relative;
+	left: 250px;
+	right: 20px;
+	align-self: flex-end;
+	justify-content: start;
+	z-index: -1;
+}
+
+
 .container {
 	align-items: center;
 	display: flex; 
 	flex-direction: column;
 	width: 100%;
   	justify-content: center;
-	
 }
 
 .pagination {
@@ -561,6 +580,7 @@ img{
 .suggestions{
 	background-color: gray;
 	padding-top: 40px; /*adds spacing below search bar*/
+	z-index: 1;
 }
 
 .active{
