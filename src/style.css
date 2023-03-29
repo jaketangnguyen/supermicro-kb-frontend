@@ -82,7 +82,7 @@ HTML, body {
 }
 
 /*changed nav-items:hover to nav-links:hover since I was moving css properties over to nav-links*/
-.nav-items:hover{
+.nav-links:hover{
 	text-decoration: none;
 	border-bottom: 4px solid #fff;
 	transition: all 0.15s ease-out;

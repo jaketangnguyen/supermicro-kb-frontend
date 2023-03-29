@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../style.css";
 import { Link, Routes, Route } from 'react-router-dom';
 import UserAuth from "../services/UserAuth";
-import { MdLogout } from 'react-icons/md'
+import { MdLogout } from 'react-icons/md';
 
 export default function Header() {
     //using font-awesome hamburger
