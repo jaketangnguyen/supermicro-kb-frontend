@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../style.css";
 import { Link, Routes, Route } from 'react-router-dom';
 import UserAuth from "../services/UserAuth";
+import { MdLogout } from 'react-icons/md'
 
 export default function Header() {
     //using font-awesome hamburger
@@ -40,9 +41,9 @@ export default function Header() {
                             </Link>
                         </li>
 
-                        <li className="nav-items">
-                            {UserAuth.getUsername()}&nbsp;
-                            <button onClick={UserAuth.doLogout}>Logout</button>
+                        <li className="navUser">
+                            <div className= "username">Welcome {UserAuth.getUsername()}</div>
+                            <div><MdLogout fontSize='2em' onClick={UserAuth.doLogout} style= {{cursor: 'pointer'}}/></div>
                         </li>
                     
                     </ul>
