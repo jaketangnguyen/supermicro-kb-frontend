@@ -85,7 +85,7 @@ export default function Components() {
                         <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
                             
                             <Card.Body>
-                                <Card.Title>Misc.</Card.Title>
+                                <Card.Title>Add-On</Card.Title>
                             </Card.Body>
                         </Card>
 

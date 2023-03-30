@@ -82,7 +82,7 @@ HTML, body {
 }
 
 /*changed nav-items:hover to nav-links:hover since I was moving css properties over to nav-links*/
-.nav-items:hover{
+.nav-links:hover{
 	text-decoration: none;
 	border-bottom: 4px solid #fff;
 	transition: all 0.15s ease-out;
@@ -206,7 +206,7 @@ vs only having the word act as the link with the space around it non-interactive
 
 
 .page_body{
-	min-height: 800px;
+	min-height: 900px;
 }
 
 
@@ -314,6 +314,7 @@ a.nav-links {
     color: rgb(29, 1, 189);
     margin-bottom: 15px;
     margin-top: 25px;
+	text-decoration: none;
 }
 
 .result p {
@@ -422,16 +423,17 @@ button {
 
 .sBarCat{
 	font-size: 16px;
-	margin: 10; 
+	margin: 10;
+	font-weight: bold; 
 }
 
 .sidebar{
 	position: absolute;
 	display: flex;
 	list-style: none;
-	margin: 20;
+	margin-top: 100px;
+	margin-left: 20px;
 	flex-direction: column;
-	
 }
 
 .filterList{
