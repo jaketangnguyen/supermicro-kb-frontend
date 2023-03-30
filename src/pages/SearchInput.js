@@ -66,6 +66,15 @@ export default function SearchInput(props)
 
 
     const navigateResult = () => {
+        var pn;
+        if(state.pathname==="/Search"){
+            pn=".";
+
+        }else if(state.pathname==="/"){
+            pn="/Search";
+        }else {
+            pn="../Search";
+        }
         navigate({
             pathname: state.pathname === "/Search" ? "." : "Search",
             search: `?${createSearchParams({

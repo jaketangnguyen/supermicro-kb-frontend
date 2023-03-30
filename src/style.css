@@ -596,6 +596,10 @@ img{
 	z-index: 1;
 }
 
+.suggestions li:hover {
+	background-color: #bbb;
+}
+
 .active{
 	color: black;
 }
