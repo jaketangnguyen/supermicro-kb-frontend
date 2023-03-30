@@ -2,6 +2,7 @@ import React from "react";
 import "../style.css";
 import { Link, useNavigate, createSearchParams } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+import SearchInput from "./SearchInput";
 
 
 export default function CommonQuestions() {

@@ -3,6 +3,7 @@ import "../style.css";
 import { BrowserRouter as Route, useNavigate, createSearchParams } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
+import SearchInput from "./SearchInput";
 import Button from 'react-bootstrap/Button';
 
 export default function Components() {
