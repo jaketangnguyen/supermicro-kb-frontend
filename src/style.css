@@ -314,6 +314,7 @@ a.nav-links {
     color: rgb(29, 1, 189);
     margin-bottom: 15px;
     margin-top: 25px;
+	text-decoration: none;
 }
 
 .result p {
