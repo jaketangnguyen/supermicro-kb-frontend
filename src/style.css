@@ -82,11 +82,11 @@ HTML, body {
 }
 
 /*changed nav-items:hover to nav-links:hover since I was moving css properties over to nav-links*/
-.nav-links:hover{
+.nav-links:hover {
+	background-color: #fff;
+	color: #242424;
+	border-radius: 0;
 	text-decoration: none;
-	border-bottom: 4px solid #fff;
-	transition: all 0.15s ease-out;
-	color: #fff; /*fixed issue of header word sections turning blue when mouse is hovering over them*/
 }
 
 /*moved majority of css format from nav-items to nav-links allowed the area around the word to function as a link, 
