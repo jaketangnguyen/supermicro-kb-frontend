@@ -42,7 +42,7 @@ export default function Header() {
                         </li>
 
                         <li className="navUser">
-                            <div className= "username">Welcome {UserAuth.getUsername()}</div>
+                            <div className= "username">{UserAuth.getUsername()} </div>
                             <div><MdLogout fontSize='2em' onClick={UserAuth.doLogout} style= {{cursor: 'pointer'}}/></div>
                         </li>
                     

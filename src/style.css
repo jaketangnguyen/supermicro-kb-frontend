@@ -591,6 +591,7 @@ img{
 .suggestions{
 	background-color: gray;
 	padding-top: 40px; /*adds spacing below search bar*/
+	list-style-type: none;
 	z-index: 1;
 }
 
