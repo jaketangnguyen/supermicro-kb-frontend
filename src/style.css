@@ -82,7 +82,7 @@ HTML, body {
 	text-decoration: none;
 	border-bottom: 4px solid #fff;
 	transition: all 0.15s ease-out;
-	color: #fff; /*fixed issue of header word sections turning blue when mouse is hovering over them*/
+	color: #fff; /*fixed issue of header word sections turning blue on mouse hover*/
 }
 
 /*moved majority of css format from nav-items to nav-links allowed the area around the word to function as a link, 
