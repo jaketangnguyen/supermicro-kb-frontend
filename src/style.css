@@ -22,7 +22,7 @@ HTML, body {
 /*==========================================*/
 .nav {
 	min-height: 60px;
-	height: 75px;
+	height: 72px;
   	background-color:rgb(1 47 107);
   	display: flex;
   	justify-content: center;
@@ -320,15 +320,14 @@ a.nav-links {
     line-height: 18px;
     font-weight: normal;
     color: rgb(29, 1, 189);
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
     margin-top: 25px;
-	text-decoration: none;
 }
 
 .result p {
     width: 625px;
     font-size: 13px;
-    margin-top: 0px;
+    /*margin-top: 0px;*/
     color: rgb(82, 82, 82);
 }
 
