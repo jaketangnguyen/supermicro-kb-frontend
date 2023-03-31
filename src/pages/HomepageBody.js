@@ -23,7 +23,7 @@ export default function HomepageBody()
             {/* Background image added in className css section */}
             <div className="body-container">
                 {/* Header statement */}
-                <h1>Supermicro Knowledge Base</h1> 
+                <h1>Supermicro Knowledge Base123</h1> 
                 
                 {/* Search box button with navigation */}
                 <div className="search_wrap search_wrap_5">
