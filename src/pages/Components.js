@@ -35,8 +35,11 @@ export default function Components() {
     return (
         <div>
             {/* <Header /> */}
-            <div className="search_box">
-                <SearchInput />
+            <div className="search_wrap search_wrap_5">
+                <div className="search_box">
+                    <input type="text" id="search-value" className="input" placeholder="Enter SKU, Components ..." />
+                    <Button variant="primary" onClick={navigateResult}>Search</Button>
+                </div>
             </div>
 
             <div class="container">
