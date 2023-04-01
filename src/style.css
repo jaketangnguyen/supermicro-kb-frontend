@@ -427,7 +427,7 @@ button {
 	position: absolute;
 	display: flex;
 	list-style: none;
-	margin-top: 98px;
+	margin-top: 95px;
 	margin-left: 20px;
 	flex-direction: column;
 }
