@@ -239,6 +239,7 @@ vs only having the word act as the link with the space around it non-interactive
 	border: none;
 	text-decoration: underline;
 	font-size: 20px;
+	z-index: 1;
 }
 
 ::placeholder {
