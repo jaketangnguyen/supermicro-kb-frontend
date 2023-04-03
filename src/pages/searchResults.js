@@ -2,6 +2,7 @@ import React from "react";
 import SidebarCheckbox from "./SidebarCheckbox";
 import API from "../services/API";
 import SearchInput from "./SearchInput";
+import Button from 'react-bootstrap/Button';
 import "../style.css";
 
 const CATEGORIES = [
