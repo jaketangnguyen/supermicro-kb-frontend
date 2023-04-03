@@ -217,7 +217,7 @@ vs only having the word act as the link with the space around it non-interactive
 	right: 20px;
 	align-self: flex-end;
 	justify-content: start;
-	min-height: 100vh;
+	min-height: 100vh; /*maximize vertical space*/
 	/*z-index: -1;*/
 }
 
