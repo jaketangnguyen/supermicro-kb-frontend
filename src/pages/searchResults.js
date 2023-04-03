@@ -149,7 +149,7 @@ class SearchResults extends React.Component {
                         <div class="pagination">
                             {
                                 pageNumbers.map(number => (
-                                    <button class="page-button" onClick={() => this.handlePageChange(number)}>{number}</button>
+                                    <Button class="page-button" onClick={() => this.handlePageChange(number)}>{number}</Button>
                                 ))
                             }
                         </div>
