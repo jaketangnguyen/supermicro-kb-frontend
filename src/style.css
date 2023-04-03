@@ -231,7 +231,7 @@ vs only having the word act as the link with the space around it non-interactive
 
 .pagination {
 	background-color: white;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 }
 
