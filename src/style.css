@@ -217,7 +217,7 @@ vs only having the word act as the link with the space around it non-interactive
 	right: 20px;
 	align-self: flex-end;
 	justify-content: start;
-	z-index: -1;
+	/*z-index: -1;*/
 }
 
 
@@ -239,7 +239,6 @@ vs only having the word act as the link with the space around it non-interactive
 	border: none;
 	text-decoration: underline;
 	font-size: 20px;
-	z-index: 1;
 }
 
 ::placeholder {
