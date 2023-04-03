@@ -120,7 +120,7 @@ vs only having the word act as the link with the space around it non-interactive
 	  width: 100%;
 	  /* (ie. 45vh) Originally used view height, which was similar to vw. It is the % of the viewport as opposed to fixed number.
 	     switched to px so menu wouldn't move with screen resizing. */
-	  height: 270px; 
+	  height: 350px; 
 	  position: absolute;
 	  top: 80px;
 	  left: -100%;
@@ -131,7 +131,7 @@ vs only having the word act as the link with the space around it non-interactive
 	.nav-menu.active {
 	  background: #242222;
 	  left: 0;
-	  top: 100px;
+	  top: 125px;
 	  opacity: 1;
 	  transition: all 0.5s ease;
 	  z-index: 1;
