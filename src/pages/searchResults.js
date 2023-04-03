@@ -127,7 +127,7 @@ class SearchResults extends React.Component {
                     <SidebarCheckbox categories={this.state.categories} components={this.state.components} issues={this.state.issues} onFilterChange={this.handleFilterChange} />
                 </div>
                 <div>
-                    <SearchInput autoCompleteDate={keywords} />
+                    <SearchInput autoCompleteDate={this.state.keywords} />
                 </div>
 
                 <div class="page_body">
