@@ -601,6 +601,7 @@ img{
 	padding-top: 40px; /*adds spacing below search bar*/
 	list-style-type: none;
 	z-index: 1;
+	color: black;
 }
 
 .suggestions li:hover {
