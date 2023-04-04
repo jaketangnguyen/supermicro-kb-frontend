@@ -215,7 +215,6 @@ HTML, body {
 	justify-content: start;
 	min-height: 900px;
 	/*z-index: -1;*/
-	z-index: -1;
 	margin-bottom: 32px;
 
 }
@@ -601,7 +600,7 @@ img{
 	background-color: whitesmoke;
 	padding-top: 40px; /*adds spacing below search bar*/
 	list-style-type: none;
-	z-index: 99;
+	z-index: 1;
 }
 
 .suggestions li:hover {
