@@ -597,7 +597,7 @@ img{
 	background-color: gray;
 	padding-top: 40px; /*adds spacing below search bar*/
 	list-style-type: none;
-	z-index: 99;
+	z-index: 1;
 }
 
 .suggestions li:hover {
