@@ -68,6 +68,12 @@ HTML, body {
 	height: 80px;
 }
 
+.nav-links:hover {
+	text-decoration: none;
+	border-bottom: 4px solid #fff;
+	transition: all 0.15s ease-out;
+	color: #fff; /*fixed issue of header word sections turning blue on mouse hover*/
+}
 .navUser {
 	display: flex;
 	font-size: 16px;
@@ -77,16 +83,6 @@ HTML, body {
 	padding: 10px;
 }
 
-/*changed nav-items:hover to nav-links:hover since I was moving css properties over to nav-links*/
-.nav-links:hover {
-	text-decoration: none;
-	border-bottom: 4px solid #fff;
-	transition: all 0.15s ease-out;
-	color: #fff; /*fixed issue of header word sections turning blue on mouse hover*/
-}
-
-/*moved majority of css format from nav-items to nav-links allowed the area around the word to function as a link, 
-vs only having the word act as the link with the space around it non-interactive*/
 .nav-links {
 	display: flex;
 	list-style: none;
@@ -101,7 +97,6 @@ vs only having the word act as the link with the space around it non-interactive
 .fa-bars {
 	color: #fff;
 }
-
 
 .menu-icon {
 	display: none;
@@ -220,6 +215,9 @@ vs only having the word act as the link with the space around it non-interactive
 	justify-content: start;
 	min-height: 900px;
 	/*z-index: -1;*/
+	z-index: -1;
+	margin-bottom: 32px;
+
 }
 
 
@@ -235,6 +233,8 @@ vs only having the word act as the link with the space around it non-interactive
 	background-color: white;
 	position: relative;
 	bottom: 0;
+	margin-bottom: 10px;
+
 }
 
 .page-button {
