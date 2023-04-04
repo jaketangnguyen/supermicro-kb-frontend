@@ -330,6 +330,10 @@ a.nav-links {
     font-weight: normal;
 }
 
+.search_box{
+	box-shadow: none; 
+}
+
 .search_wrap .search_box{
 	justify-content: center;
 	position: relative;
@@ -594,7 +598,7 @@ img{
 }
 
 .suggestions{
-	background-color: gray;
+	background-color: whitesmoke;
 	padding-top: 40px; /*adds spacing below search bar*/
 	list-style-type: none;
 	z-index: 99;
