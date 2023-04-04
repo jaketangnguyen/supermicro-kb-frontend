@@ -213,13 +213,11 @@ HTML, body {
 	right: 20px;
 	align-self: flex-end;
 	justify-content: start;
-<<<<<<< Updated upstream
 	min-height: 900px;
 	/*z-index: -1;*/
-=======
 	z-index: -1;
 	margin-bottom: 32px;
->>>>>>> Stashed changes
+
 }
 
 
@@ -233,12 +231,10 @@ HTML, body {
 
 .pagination {
 	background-color: white;
-<<<<<<< Updated upstream
 	position: relative;
 	bottom: 0;
-=======
 	margin-bottom: 10px;
->>>>>>> Stashed changes
+
 }
 
 .page-button {
