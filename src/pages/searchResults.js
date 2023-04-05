@@ -126,7 +126,8 @@ class SearchResults extends React.Component {
                 <div>
                     <SidebarCheckbox categories={this.state.categories} components={this.state.components} issues={this.state.issues} onFilterChange={this.handleFilterChange} />
                 </div>
-                <div>
+
+                <div className>
                     <SearchInput />
                 </div>
 

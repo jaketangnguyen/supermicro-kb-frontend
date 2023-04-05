@@ -13,7 +13,12 @@ export default function SearchInput(props)
     const navigate = useNavigate();
     const state = useLocation();
 
-    useEffect(() => { setKeywords(props.autoCompleteData) }, [props.autoCompleteData]);
+    useEffect(() => { const api = new API();
+        api.getKeywords().then((response) => {
+            console.log(response.data);
+            setKeywords(response.data.map(({ keyword }) => keyword));
+        }).catch((err) => console.log(err));
+    }, []);
 
     /*Suggestions triggered when typing in query*/
     const handleChange = (e) => {
