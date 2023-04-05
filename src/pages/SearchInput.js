@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
 import "../style.css";
 import { useNavigate, createSearchParams, useLocation } from "react-router-dom";
+import API from "../services/API";
 
 export default function SearchInput(props) 
 {
