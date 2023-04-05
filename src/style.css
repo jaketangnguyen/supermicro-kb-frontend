@@ -409,6 +409,7 @@ a.nav-links {
 	justify-content: right;
 	flex-direction: column;
 	min-height: 900px;
+	z-index: -1;
 }
 
 .result{
