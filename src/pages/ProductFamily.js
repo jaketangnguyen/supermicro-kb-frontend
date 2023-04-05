@@ -51,7 +51,7 @@ export default function ProductFamily() {
                 <div class="resultsSpace">
 
                     <Row className= "g-4 gap-5">
-                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer"}}>
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center"}}>
                             <Card.Img variant="top" src="https://www.supermicro.com/sites/default/files/product/normal/SYS-2029U-TN24R4T.png" />
                             <Card.Body>
                                 <Card.Title>Ultra</Card.Title>
