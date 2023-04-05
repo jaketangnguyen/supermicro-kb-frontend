@@ -598,14 +598,16 @@ img{
 
 .suggestions{
 	background-color: whitesmoke;
+	align-items: start;
 	padding-top: 40px; /*adds spacing below search bar*/
 	list-style-type: none;
-	z-index: 1;
+	z-index: 99;
 	color: black;
 }
 
 .suggestions li:hover {
 	background-color: #bbb;
+	z-index: 99;
 }
 
 .active{

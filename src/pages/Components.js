@@ -50,46 +50,46 @@ export default function Components() {
                         <p>                   </p>
                     </div>
 
-                    <Row>
-                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
-                            
+                    <Row className= "g-3 gap-5">
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
+                            <Card.Img variant="top" src={require("../Photos/Icons/cpu2.png")} />
                             <Card.Body>
                                 <Card.Title>CPU</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
-                            
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
+                            <Card.Img variant="top" src={require("../Photos/Icons/memory.png")} />
                             <Card.Body>
                                 <Card.Title>Memory</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
-                            
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
+                            <Card.Img variant="top" src={require("../Photos/Icons/storage.png")} />
                             <Card.Body>
-                                <Card.Title>Storage Related</Card.Title>
+                                <Card.Title>Storage</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
-                            
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
+                            <Card.Img variant="top" src={require("../Photos/Icons/gpu4.png")} />
                             <Card.Body>
                                 <Card.Title>GPU</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
-                            
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
+                            <Card.Img variant="top" src={require("../Photos/Icons/networking.png")} />
                             <Card.Body>
                                 <Card.Title>Networking</Card.Title>
                             </Card.Body>
                         </Card>
 
-                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer" }}>
-                            
+                        <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
+                            <Card.Img variant="top" src={require("../Photos/Icons/addon.png")} />
                             <Card.Body>
-                                <Card.Title>Add-On</Card.Title>
+                                <Card.Title>Add On</Card.Title>
                             </Card.Body>
                         </Card>
 

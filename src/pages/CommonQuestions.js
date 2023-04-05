@@ -44,8 +44,23 @@ export default function CommonQuestions() {
 
                     <div class="result">
                         <h2> Why am I unable to find Blade systems on the configurator? </h2>
-                        <a> </a>
                         <p> The Configurator currently does not support Blade systems.  Recommend to submit manually with your sales representative. </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="result">
+                        <h2> What is the EWCSC for complete system on Configurator? </h2>
+                        <p> When users select standard SKUs with validated CPU, Memory, and drives, it will comply with EWCSC policy. For more details, 
+                            please refer to Supermicro Limited Warranty (https://www.supermicro.com/en/support/warranty). </p>
+                    </div>
+
+                    <hr />
+
+                    <div class="result">
+                        <h2> How to sign up as a customer for Configurator? </h2>
+                        <p> Customer need to request through sales rep for account registration, sales rep will apply through Sales Portal (https://salesportal.supermicro.com). 
+                            Once granted, customer can log in Customer portal (https://customerportal.supermicro.com/) to use System Configurator. If customer cannot access to customer portal, please contact sales representative. </p>
                     </div>
 
                     <hr />
