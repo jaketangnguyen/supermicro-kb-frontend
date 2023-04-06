@@ -602,15 +602,18 @@ img{
 .suggestions{
 	background-color: whitesmoke;
 	align-items: start;
-	padding-top: 40px; /*adds spacing below search bar*/
+	left: 0;
+	padding-top: 60px; /*adds spacing below search bar*/
 	list-style-type: none;
 	z-index: 99;
 	color: black;
+	cursor: default;
 }
 
 .suggestions li:hover {
 	background-color: #bbb;
 	z-index: 99;
+	cursor: default;
 }
 
 .active{
