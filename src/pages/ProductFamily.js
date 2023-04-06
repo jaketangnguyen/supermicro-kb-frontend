@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import SearchInput from "./SearchInput";
-import API from "../services/API";
 import { useState, useEffect } from 'react';
 
 
@@ -40,11 +39,8 @@ export default function ProductFamily() {
     return (
         <div>
             {/* <Header /> */}
-            <div className="search_wrap search_wrap_5">
-                <div className="search_box">
-                    <input type="text" id="search-value" className="input" placeholder="Enter SKU, Components ..." />
-                    <Button variant="primary" onClick={navigateResult}>Search</Button>
-                </div>
+            <div className="search_box">
+                <SearchInput />
             </div>
 
             <div class="container">
