@@ -602,7 +602,8 @@ img{
 .suggestions{
 	background-color: whitesmoke;
 	align-items: start;
-	padding-top: 40px; /*adds spacing below search bar*/
+	justify-content: start;
+	padding-top: 38px; /*adds spacing below search bar*/
 	list-style-type: none;
 	z-index: 99;
 	color: black;
