@@ -600,7 +600,7 @@ img{
 }
 
 .suggestions{
-	background-color: transparent;
+	background-color: whitesmoke;
 	align-items: start;
 	padding-top: 40px; /*adds spacing below search bar*/
 	list-style-type: none;
