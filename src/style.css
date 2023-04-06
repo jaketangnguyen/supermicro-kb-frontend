@@ -230,12 +230,10 @@ HTML, body {
 
 .pagination {
 	background-color: white;
-	display: flex;
-	flex-direction: row;
 	width: 72%;
 	position: relative;
 	align-items: center;
-
+	justify-content: center;
 	bottom: 0;
 	margin-bottom: 10px;
 	z-index: 1;
