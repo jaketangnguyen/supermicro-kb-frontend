@@ -234,8 +234,8 @@ HTML, body {
 	position: relative;
 	align-items: center;
 	justify-content: center;
-	bottom: 0;
-	margin-bottom: 10px;
+	left: 200px;
+	margin-bottom: 32px;
 	z-index: 1;
 }
 
