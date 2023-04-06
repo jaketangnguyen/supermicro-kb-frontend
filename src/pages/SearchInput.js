@@ -82,7 +82,8 @@ export default function SearchInput(props)
             pn="../Search";
         }
         navigate({
-            pathname: state.pathname === "/Search" ? "." : "Search",
+
+            pathname: pn,
             search: `?${createSearchParams({
                 query: value
             })}`
