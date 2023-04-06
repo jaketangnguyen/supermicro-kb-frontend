@@ -616,6 +616,11 @@ img{
 	cursor: default;
 }
 
+.cards{
+	position: relative;
+	z-index: -1;
+}
+
 .active{
 	color: black;
 }
