@@ -606,11 +606,13 @@ img{
 	list-style-type: none;
 	z-index: 99;
 	color: black;
+	cursor: pointer;
 }
 
 .suggestions li:hover {
 	background-color: #bbb;
 	z-index: 99;
+	cursor: pointer;
 }
 
 .active{
