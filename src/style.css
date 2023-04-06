@@ -231,6 +231,7 @@ HTML, body {
 .pagination {
 	background-color: white;
 	position: relative;
+	align-items: center;
 	bottom: 0;
 	margin-bottom: 10px;
 	z-index: 1;
