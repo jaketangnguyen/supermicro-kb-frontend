@@ -111,7 +111,7 @@ export default function ProductFamily() {
                             </Card>
 
                             <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
-                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/mainImages/SYS-120H-TNR_main.jpg" />
+                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/SYS-121H-TNR_main.jpg" />
                                 <Card.Body>
                                     <Card.Title>Hyper</Card.Title>
                                 </Card.Body>
