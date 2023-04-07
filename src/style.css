@@ -428,6 +428,10 @@ button {
 
 /* Sidebar */
 
+checkbox{
+	margin-right: 1px;
+}
+
 .sBarCat{
 	font-size: 16px;
 	margin: 10;
