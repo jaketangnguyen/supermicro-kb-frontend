@@ -333,7 +333,8 @@ a.nav-links {
 }
 
 .search_box{
-	box-shadow: none; 
+	box-shadow: none;
+	z-index: 99;
 }
 
 .search_wrap .search_box{
