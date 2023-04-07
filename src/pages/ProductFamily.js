@@ -62,14 +62,14 @@ export default function ProductFamily() {
                             </Card>
 
                             <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
-                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/mainImages/SSG-620P-ACR12H_main.jpg" />
+                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/SSG-640SP-E1CR60_main.jpg" />
                                 <Card.Body>
                                     <Card.Title>Storage</Card.Title>
                                 </Card.Body>
                             </Card>
 
                             <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
-                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/mainImages/SYS-110P-WTR_main.jpg" />
+                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/SYS-521C-NR_main.jpg" />
                                 <Card.Body>
                                     <Card.Title>UP</Card.Title>
                                 </Card.Body>
@@ -118,7 +118,7 @@ export default function ProductFamily() {
                             </Card>
 
                             <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
-                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/mainImages/SYS-740A-T_main.jpg" />
+                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/SYS-751A-I_main.jpg" />
                                 <Card.Body>
                                     <Card.Title>Super Workstation</Card.Title>
                                 </Card.Body>
