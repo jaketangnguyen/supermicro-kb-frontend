@@ -429,7 +429,7 @@ button {
 
 /* Sidebar */
 
-input [type=checkbox]{
+button, input, optgroup, select, textarea{
 	margin-right: 5px;
 }
 
