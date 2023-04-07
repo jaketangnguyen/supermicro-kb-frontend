@@ -429,7 +429,7 @@ button {
 
 /* Sidebar */
 
-checkbox{
+input [type=checkbox]{
 	margin-right: 5px;
 }
 
