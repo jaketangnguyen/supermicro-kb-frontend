@@ -41,12 +41,6 @@ export default function Components() {
 
             <div class="container">
                 <div class="resultsSpace">
-                    <div class="result">
-                        <h2> Components Page</h2>
-                        <a>                   </a>
-                        <p>                   </p>
-                    </div>
-
                     <div class="cards">
                         <Row className="g-3 gap-5">
                             <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
