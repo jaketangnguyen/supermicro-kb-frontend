@@ -36,7 +36,7 @@ class SearchResults extends React.Component {
 
         this.state = {
 
-            categories: CATEGORIES,
+            /*categories: CATEGORIES,*/
             components: COMPONENTS,
             issues: ISSUETYPE,
             entries: [],
@@ -124,7 +124,7 @@ class SearchResults extends React.Component {
         return (
             <div>
                 <div>
-                    <SidebarCheckbox categories={this.state.categories} components={this.state.components} issues={this.state.issues} onFilterChange={this.handleFilterChange} />
+                    <SidebarCheckbox /*categories={this.state.categories}*/ components={this.state.components} issues={this.state.issues} onFilterChange={this.handleFilterChange} />
                 </div>
 
                 <div className>
