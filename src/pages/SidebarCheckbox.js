@@ -24,8 +24,8 @@ class SidebarCheckbox extends React.Component {
             <Col sm={4}>
 
               <ListGroup className="sidebar">
-
-                {/* category type filter */}
+              {/*
+                {// category type filter }
                 <header className="sBarCat">
                   {'Categories'}
                 </header>
@@ -41,6 +41,7 @@ class SidebarCheckbox extends React.Component {
                     {category}
                   </ListGroup.Item>
                 ))}
+              */}
 
                 {/* components filter */}
                 <header className="sBarCat">

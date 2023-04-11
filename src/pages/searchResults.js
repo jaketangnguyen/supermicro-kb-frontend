@@ -4,11 +4,11 @@ import API from "../services/API";
 import SearchInput from "./SearchInput";
 import "../style.css";
 
-const CATEGORIES = [
+/*const CATEGORIES = [
     "Questions & Answers",
     "Articles",
     "Others"
-]
+]*/
 
 const COMPONENTS = [
     "System",
@@ -36,7 +36,7 @@ class SearchResults extends React.Component {
 
         this.state = {
 
-            categories: CATEGORIES,
+            /*categories: CATEGORIES,*/
             components: COMPONENTS,
             issues: ISSUETYPE,
             entries: [],
@@ -124,7 +124,7 @@ class SearchResults extends React.Component {
         return (
             <div>
                 <div>
-                    <SidebarCheckbox categories={this.state.categories} components={this.state.components} issues={this.state.issues} onFilterChange={this.handleFilterChange} />
+                    <SidebarCheckbox /*categories={this.state.categories}*/ components={this.state.components} issues={this.state.issues} onFilterChange={this.handleFilterChange} />
                 </div>
 
                 <div className>
