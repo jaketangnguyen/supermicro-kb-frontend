@@ -19,7 +19,7 @@ const COMPONENTS = [
     "AOC Storage",
     "AOC Networking",
     "SIOM/AIOM",
-    "Accessories",
+    /*"Accessories",*/
     "Add-On Part",
     "Power Supply"
 ]
