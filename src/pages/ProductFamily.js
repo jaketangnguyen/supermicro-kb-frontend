@@ -69,9 +69,9 @@ export default function ProductFamily() {
                             </Card>
 
                             <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
-                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/SYS-521C-NR_main.jpg" />
+                                <Card.Img variant="top" src="https://www.supermicro.com/a_images/products/SuperServer/1U/SYS-1029P-WT.jpg" />
                                 <Card.Body>
-                                    <Card.Title>UP</Card.Title>
+                                    <Card.Title>WIO</Card.Title>
                                 </Card.Body>
                             </Card>
 
@@ -125,9 +125,9 @@ export default function ProductFamily() {
                             </Card>
 
                             <Card onClick={stateChange} style={{ width: '18rem', cursor: "pointer", alignItems: "center" }}>
-                                <Card.Img variant="top" src="https://www.supermicro.com/a_images/products/SuperServer/1U/SYS-1029P-WT.jpg" />
+                                <Card.Img variant="top" src="https://www.supermicro.com/files_SYS/images/System/SYS-521C-NR_main.jpg" />
                                 <Card.Body>
-                                    <Card.Title>WIO</Card.Title>
+                                    <Card.Title>UP</Card.Title>
                                 </Card.Body>
                             </Card>
 
