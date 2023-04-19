@@ -496,12 +496,12 @@ checkbox{
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
+  text-decoration: none
 }
 .footer-links li
 {
   display:block;
-  text-decoration: none
 }
 .footer-links a
 {
