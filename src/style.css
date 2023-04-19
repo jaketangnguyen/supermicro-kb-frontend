@@ -500,7 +500,8 @@ checkbox{
 }
 .footer-links li
 {
-  display:block
+  display:block;
+  text-decoration: none
 }
 .footer-links a
 {
