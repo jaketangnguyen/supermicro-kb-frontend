@@ -216,7 +216,6 @@ HTML, body {
 	min-height: 900px;
 	z-index: -1;
 	margin-bottom: 32px;
-
 }
 
 
@@ -497,11 +496,11 @@ checkbox{
 {
   padding-left:0;
   list-style:none;
-  text-decoration: none
 }
-.footer-links li
+.footer-links li a
 {
   display:block;
+  text-decoration: none
 }
 .footer-links a
 {
